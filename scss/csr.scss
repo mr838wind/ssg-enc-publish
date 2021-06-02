@@ -2,8 +2,33 @@
 $메인컬러: #544039;
 $red: #da2128;
 @font-face {
-  font-family: "rix";
-  src: url("../font/Rix\ M\ Go\ B.ttf") format("truetype");
+  font-family: "rix_b";
+  src: url("../font/rix_m_go_b.ttf") format("truetype"),
+    url("../font/rix_m_go_b.eot") format("embedded-opentype"),
+    url("../font/rix_m_go_b.woff") format("woff"),
+    url("../font/rix_m_go_b.woff2") format("woff2");
+}
+@font-face {
+  font-family: "rix_l";
+  src: url("../font/rix_m_go_l.TTF") format("truetype"),
+    url("../font/rix_m_go_l.eot") format("embedded-opentype"),
+    url("../font/rix_m_go_l.woff") format("woff"),
+    url("../font/rix_m_go_l.woff2") format("woff2");
+}
+@font-face {
+  font-family: "rix_m";
+  src: url("../font/rix_m_go_m.TTF") format("truetype"),
+    url("../font/rix_m_go_m.eot") format("embedded-opentype"),
+    url("../font/rix_m_go_m.woff") format("woff"),
+    url("../font/rix_m_go_m.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gotham_m";
+  src: url("../font/Gotham_Medium.ttf") format("truetype"),
+    url("../font/Gotham_Medium.eot") format("embedded-opentype"),
+    url("../font/Gotham_Medium.woff") format("woff"),
+    url("../font/Gotham_Medium.woff2") format("woff2");
 }
 
 /*layout position absolute 수정사항*/
@@ -54,12 +79,12 @@ $red: #da2128;
       width: calc(100% / 3);
       text-align: center;
       padding: 6px 0;
-      font-size: 13px;
+      font-size: 14px;
       font-weight: bold;
       border-top: 3px solid $메인컬러;
       border-bottom: none;
       background-color: #d6d6d6;
-      font-family: "rix";
+      font-family: "rix_m";
       position: relative;
       &::after {
         content: "";
@@ -88,9 +113,9 @@ $red: #da2128;
   width: 850px;
 
   .mainTitle {
-    font-family: "rix";
+    font-family: "rix_l";
     font-weight: 500;
-    font-size: 28px;
+    font-size: 27px;
     color: $메인컬러;
     line-height: 1.2;
 
@@ -102,13 +127,14 @@ $red: #da2128;
   .h4_tit {
     margin: 24px 0;
     font-size: 16px;
-    font-weight: bold;
-    font-family: "rix";
+    // font-weight: bold;
+    font-family: "rix_m";
     color: $메인컬러;
     img {
       padding: 4px;
       position: relative;
       top: -1px;
+      vertical-align: middle;
     }
   }
 }
@@ -120,45 +146,43 @@ $red: #da2128;
 @include layoutModify();
 /***********************CSR08*****************************/
 .csr_08_01_wrap {
-  font-family: '돋움','Dotum',sans-serif;
-  .mainTitle{
+  font-family: "돋움", "Dotum", sans-serif;
+  .mainTitle {
     letter-spacing: -0.05em;
   }
   .h3_tit {
     font-size: 20px;
-    font-family: "rix";
+    font-family: "rix_m";
     color: $메인컬러;
     padding: 32px 0 12px 0;
     letter-spacing: -0.08em;
   }
-  .textBox{
-    p{
+  .textBox {
+    p {
       margin: 24px 0;
     }
   }
-  
-  .imgWrap{
-    text-align: center ;
+
+  .imgWrap {
+    text-align: center;
     margin: 12px 0 60px;
-  
   }
 
-  .videoWrap{
-    p{
+  .videoWrap {
+    p {
       padding: 12px 0 8px;
-      span{
+      span {
         color: $red;
       }
     }
   }
 
-  .line{
+  .line {
     width: 100%;
     height: 1px;
     background-color: #ccc;
     margin: 4px 0;
   }
-
 }
 
 /***********************CSR07*****************************/
@@ -225,7 +249,7 @@ $red: #da2128;
       .cTitle {
         float: left;
         width: 100px;
-        font-family: "rix";
+        font-family: "rix_b";
         font-weight: bold;
         display: block;
       }
@@ -241,12 +265,12 @@ $red: #da2128;
       float: right;
       .imgWrap {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         img {
-          margin: 0 8px;
+          margin: 0 0 0 24px;
           position: relative;
           top: 10px;
-          left: -40px;
+          width: 156px;
         }
       }
     }
@@ -266,7 +290,7 @@ $red: #da2128;
     .h3_tit {
       font-size: 20px;
       font-weight: bold;
-      font-family: "rix";
+      font-family: "rix_m";
       color: $메인컬러;
       padding: 80px 0 12px 0;
     }
@@ -332,7 +356,18 @@ $red: #da2128;
     }
 
     .textBox {
-      padding-left: 24px;
+      padding-left: 36px;
+    }
+    
+    .h4_tit{
+      span{
+        font-family: 'Gotham_m',sans-serif;
+        font-size: 20px;
+        padding-right: 8px;
+        vertical-align: middle;
+        position: relative;
+        top: -1px;
+      }
     }
   }
   /***********************경영인증*********************************/
@@ -341,49 +376,77 @@ $red: #da2128;
       padding-top: 12px;
     }
     .certifiWrap {
-      margin-top: 40px;
+      margin-top: 16px;
     }
     .leftWrap {
       float: left;
-      width: 50%;
+      width: 49%;
       display: flex;
       box-sizing: border-box;
-      .textBox {
-        padding-left: 24px;
+      border-top: 1px solid #ccc;
+
+      > img {
+        width: 64px;
+        height: 92px;
+        border: 1px solid #ccc;
       }
     }
     .rightWrap {
       float: right;
-      width: 50%;
+      width: 49%;
       display: flex;
       box-sizing: border-box;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
       .textBox {
-        padding-left: 24px;
+        // padding-left: 24px;
+      }
+      > img {
+        width: 64px;
+        border: 1px solid #ccc;
       }
     }
     .textBox {
-      li {
+      ul {
         padding: 4px 0;
+      }
+      li {
+        padding: 4px 0px 0px 40px;
         position: relative;
+        color: #887059;
+        font-family: "돋움", "Dotum", sans-serif;
+        letter-spacing: -0.08em;
+        top: -10px;
         img {
-          padding: 8px 0;
+          padding: 12px 0;
+          // width: 40px;
+          position: relative;
+          top: -10px;
         }
         span {
           position: absolute;
-          top: 12px;
-          right: -4px;
+          top: 5px;
+          // right: -6px;
+          left: 88px;
           font-weight: bold;
-          font-family: "rix";
+          font-family: "굴림","Gulim",sans-serif;
+          color: $메인컬러;
+          font-size: 13px;
         }
         .pl12 {
           // padding-left: 4px;
+        }
+
+        &:last-child {
+          padding: 0px 0 4px 40px;
         }
       }
     }
 
     .borderB {
-      padding-bottom: 40px;
-      border-bottom: 1px solid #ccc;
+      padding-bottom: 16px;
+      padding-top: 16px;
+      // border-bottom: 1px solid #ccc;
     }
 
     .line {
@@ -394,11 +457,13 @@ $red: #da2128;
     }
 
     .pt40 {
-      padding-top: 40px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #ccc;
     }
     .pb24 {
-      padding-bottom: 24px;
-      border-bottom: 1px solid #ccc;
+      padding-bottom: 60px;
+      // border-bottom: 1px solid #ccc;
     }
   }
 }
@@ -436,9 +501,6 @@ $red: #da2128;
     img {
       width: 100%;
     }
-
- 
-
   }
 
   /*certificateWrap*/
@@ -469,7 +531,7 @@ $red: #da2128;
       .cTitle {
         float: left;
         width: 100px;
-        font-family: "rix";
+        font-family: "rix_m";
         font-weight: bold;
         display: block;
       }
@@ -485,12 +547,12 @@ $red: #da2128;
       float: right;
       .imgWrap {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         img {
-          margin: 0 8px;
+          margin: 0 0px 0 24px;
           position: relative;
           top: 10px;
-          left: -40px;
+          width: 156px;
         }
       }
     }
@@ -499,6 +561,7 @@ $red: #da2128;
 
 /***********************CSR04*****************************/
 .csr_04_wrap {
+
   .textWrap {
     font-family: "돋움", "Dotum", sans-serif;
     letter-spacing: -0.08em;
@@ -513,7 +576,7 @@ $red: #da2128;
   .infoWrap {
     margin-top: 80px;
     .h3_tit {
-      font-family: "rix", sans-serif;
+      font-family: "rix_m", sans-serif;
       font-weight: bold;
       font-size: 18px;
       color: $메인컬러;
@@ -546,6 +609,8 @@ $red: #da2128;
 /***********************CSR03*****************************/
 
 .csr_03_wrap {
+
+
   font-family: "돋움", "Dotum", sans-serif;
   .imgWrap {
     float: left;
@@ -568,7 +633,7 @@ $red: #da2128;
       th {
         color: $메인컬러;
         font-weight: bold;
-        font-family: "rix";
+        font-family: "rix_m";
         background-color: #e4e4e4;
         border: 1px solid #d1d1d1;
         border-top: 3px solid $메인컬러;

@@ -10,7 +10,9 @@
 <link rel="shortcut icon" href="https://shinsegae-enc.com/favicon.ico" type="image/x-icon" />
 <link rel="apple-touch-icon" href="https://shinsegae-enc.com/apple-touch-icon.png" />
 <link rel="stylesheet" type="text/css" href="https://shinsegae-enc.com/common/css/import.css" />
-<link rel="stylesheet" href="../css/csr.css">
+
+<link rel="stylesheet" href="../css/fontello-embedded.css">
+<link rel="stylesheet" href="../css/stock.css">
 
 <!-- 
 document.write("<script type='text/javascript' src='/js/jquery/jquery-1.8.3.min.js'></script>");
@@ -131,11 +133,7 @@ document.write("<script type='text/javascript' src='/js/jquery/alertify.min.js'>
                         <ul class="snb_2dep_area">
                         	<li class="fir"><a href="https://shinsegae-enc.com/csr/about_csr.asp" class="snb04_1 ">CSR 개요</a></li><!-- 첫번째 메뉴 class="fir" -->
                         	<li><a href="https://shinsegae-enc.com/csr/transparent_management.asp" class="snb04_2 ">투명경영</a></li>
-                            <li><a href="../html/csr_04.html" class="snb04_3 ">사회공헌</a></li>
-                            <li><a href="../html/csr_05.html" class="snb04_4 ">품질경영</a></li>
-                            <li><a href="../html/csr_06.html" class="snb04_5 ">안전보건경영</a></li>
-                            <li><a href="../html/csr_07.html" class="snb04_6 ">친환경경영</a></li>
-                        	<li><a href="https://shinsegae-enc.com/csr/shared_growth.asp" class="n_2dep snb04_7">동반성장</a><!-- 3dep 있을경우 : class="n_2dep" -->
+                        	<li><a href="https://shinsegae-enc.com/csr/shared_growth.asp" class="n_2dep snb04_3">동반성장</a><!-- 3dep 있을경우 : class="n_2dep" -->
 							    <!-- snb_3dep_area -->
                                 <ul class="snb_3dep_area">
                                     <li><a href="https://shinsegae-enc.com/csr/shared_growth.asp" class="snb04_3_1 ">개요</a></li>
@@ -145,8 +143,7 @@ document.write("<script type='text/javascript' src='/js/jquery/alertify.min.js'>
                                 </ul>
                                 <!-- snb_3dep_area -->
                         	</li>
-                        	<li><a href="https://shinsegae-enc.com/csr/csrhot.list.asp" class="snb04_8 ">CSR 핫라인</a></li>
-                            
+                        	<li><a href="https://shinsegae-enc.com/csr/csrhot.list.asp" class="snb04_4 ">CSR 핫라인</a></li>
                         	
                             <!-- <li><a href="https://shinsegae-enc.com/csr/csr.list.asp" class="snb04_2 ">CSR 소식</a></li> -->
 							
@@ -240,8 +237,7 @@ document.write("<script type='text/javascript' src='/js/jquery/alertify.min.js'>
         <h2>본문내용</h2>
         <!-- content-header -->
         <div class="content-header">
-            <!-- <h3><img src="https://shinsegae-enc.com//images/investor/title_finance.gif" alt="재무상태표" /></h3> -->
-            <h3><img src="../images/investor/title_csr04.png" alt="품질경영"></h3>
+            <h3><img src="https://shinsegae-enc.com//images/investor/title_finance.gif" alt="재무상태표" /></h3>
             <div class="location">
 <a href="https://shinsegae-enc.com/" class="home" title="메인 화면으로 이동"><img src="https://shinsegae-enc.com/images/common/bullet/bullet_location.gif" alt="메인 화면으로 이동" /></a>
 <a href="https://shinsegae-enc.com/investor/finance.list.asp">투자정보</a>
@@ -253,127 +249,221 @@ document.write("<script type='text/javascript' src='/js/jquery/alertify.min.js'>
         </div>
         <div class="content">
 
-       
             <!--****************************************** 여기에 다가 작업 하시면 됩니다. ******************************************-->
-            <div class="csr_04_wrap">
-                <div class="textWrap">
-                    신세계건설은 업의 본질을 반영한 <span>비즈니스 상생</span>과 <span>취약계층 지원</span> 및 <span>환경보호 캠페인</span>을 <br>
-                    중심으로 지역사회의 일원으로서 나눔과 상생의 정신을 펼치고 있습니다. <br>
-                    특히, 카페테리아 봉사활동을 통해 임직원이 자율적으로 선택해서 참여할 수 있는 기회를 제공하고 있으며, <br>
-                    임직원 본인 외에도 가족과 함께 할 수 있는 참여형 활동 또한 장려하고 있습니다.
-                </div>
+                  <div class="tabWrap table-tab">
+                    <ul>
+                      <li><a href="#void" onclick="changeTab('0')">주식에 관한 사항 및 주식 분포상황<i class="icon-down-dir"></i></a></li>
+                      <li><a href="#void" onclick="changeTab('1')">배당에 관한 사항<i class="icon-down-dir"></i></a></li>
+                    </ul>
+                  </div>
 
-                <div class="graphWrap">
-                    <img src="../img/csr_04_graph.png" alt="2020년 사회공헌 : 318백만
-                    리모델링/집수리:175백만 , 취약계층 지원 114백만, 협력사지원: 15백만,기타:14백만
-                    ">
-                </div>
+                  <div class="tab-cont-0">
+                    <h4 class="h4_tit">주식에 관한 사항</h4>
+                    <p class="rText">(단위: 원, 주)</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>종류</th>
+                                <th>발행주식총수</th>
+                                <th>액면총액</th>
+                                <th>비고</th>
+                            </tr>
+                        </thead>
 
-                <div class="infoWrap">
-                    <h3 class="h3_tit">주요 사회공헌활동 소개</h3>
+                        <tbody>
+                            <tr>
+                                <td class="wb">보통주식</td>
+                                <td>4,000,000</td>
+                                <td>20,000,000,000</td>
+                                <td>주당 5,000</td>
+                            </tr>
+                            <tr>
+                                <td class="wb">우선주식</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td class="wb">합계</td>
+                                <td class="cRed">4,000,000</td>
+                                <td class="cRed">20,000,000,000</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4 class="h4_tit">주식분포상황 <span>(2020년 12월 31일 기준)</span></h4>
+                    <p class="rText">(단위 : 주, %)</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>구분</th>
+                                <th>성명</th>
+                                <th>소유주식수</th>
+                                <th>비율</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="wb">최대주주</td>
+                                <td>㈜이마트 외 특수관계인</td>
+                                <td class="cRed">1,708,107</td>
+                                <td>42.71</td>
+                            </tr>
+
+                            <tr>
+                                <td class="wb">주요주주</td>
+                                <td>KB 자산운용</td>
+                                <td class="cRed">304,363</td>
+                                <td>7.61</td>
+                            </tr>
+
+                            <tr>
+                                <td class="wb">외국인</td>
+                                <td>-</td>
+                                <td class="cRed">0</td>
+                                <td>0.00</td>
+                            </tr>
+
+                            <tr>
+                                <td class="wb">기타</td>
+                                <td>개인주주 등</td>
+                                <td class="cRed">1,987,530</td>
+                                <td>49.68</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                  </div>
+
+                  <div class="tab-cont-1">
+                     <h4 class="h4_tit borderB">배당현황</h4>
+                     <table>
+                    <thead>
+                      <tr>
+                        <th colspan="2">항목</th>
+                        <th>2020년</th>
+                        <th>2019년</th>
+                        <th>2018년</th>
+                        <th>2017년</th>
+                        <th>2016년</th>
+                        <th>2015년</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td colspan="2" class="wb">영업이익 (억원)</td>
+                        <td>206</td>
+                        <td>242</td>
+                        <td>218</td>
+                        <td>247</td>
+                        <td>519</td>
+                        <td>419</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="wb">당기순이익 (억원)</td>
+                        <td>122</td>
+                        <td>175</td>
+                        <td>431</td>
+                        <td>290</td>
+                        <td>378</td>
+                        <td>160</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="wb">주당순이익 (원)</td>
+                        <td>3,058</td>
+                        <td>4,379</td>
+                        <td>10,768</td>
+                        <td>7,256</td>
+                        <td>9,450</td>
+                        <td>3,993</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="wb">배당종류</td>
+                        <td>현금배당</td>
+                        <td>현금배당</td>
+                        <td>현금배당</td>
+                        <td>현금배당</td>
+                        <td>현금배당</td>
+                        <td>현금배당</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="wb">배당총금액 (억원)</td>
+                        <td>32</td>
+                        <td>32</td>
+                        <td>30</td>
+                        <td>30</td>
+                        <td>20</td>
+                        <td>10</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="2" class="wb">배당성향(%)</td>
+                        <td class="wb">영업이익</td>
+                        <td>15.5</td>
+                        <td>13.2</td>
+                        <td>13.8</td>
+                        <td>12.1</td>
+                        <td>3.9</td>
+                        <td>2.4</td>
+                      </tr>
+                      <tr>
+                        <td class="wb">당기순이익</td>
+                        <td>26.2</td>
+                        <td>18.3</td>
+                        <td>7.0</td>
+                        <td>10.3</td>
+                        <td>5.3</td>
+                        <td>6.3</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="wb">주당현금배당금(원)</td>
+                        <td>800</td>
+                        <td>800</td>
+                        <td>750</td>
+                        <td>750</td>
+                        <td>500</td>
+                        <td>250</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="wb">배당수익률(%)</td>
+                        <td>3.1</td>
+                        <td>3.0</td>
+                        <td>3.2</td>
+                        <td>2.8</td>
+                        <td>1.1</td>
+                        <td>0.6</td>
+                      </tr>
+                    </tbody>
+                    </table>           
+                  </div>
+
+
+                  <!-- tab script 추가-->
+                  <script>
+                    
+                    $(document).ready(function() {
+                      changeTab('0');
+                    });
+
+
+                    changeTab = function(idx) {
                 
-
-                    <div class="imgWrap">
-                        <!------------------ li 안에 p 태그 => h4 로 수정 0531------------------>
-                        <ul>
-                            <li class="mt32">
-                                <img src="../img/csr_04_img_01.png" alt="희망장난감도서관 리모델링 사진">
-                                <h4 class="h4_tit">희망장난감도서관 리모델링</h4>
-                                <div class="textBox">희망장난감도서관 리모델링은 지난 2014년부터 진행한 신세계건설 사업의 <br>
-                                    특성이  반영된 당사의 대표적인 사회공헌활동입니다. <br>
-                                    초록우산 어린이재단의 협약을 통해 지역의 어린이 도서관 중 노후화되거나 <br>
-                                    시설이 낙후된 곳을 보수하고 장난감과 어린이 도서 기증하는 프로그램입니다. <br>
-                                    이는 지역 어린이들의 희망을 채워주는 활동이며, 현재까지 서울, 대전, 전주, <br>
-                                    광주, 대구, 울산, 제주 등 전국 24개 지역 30여개소에 달합니다.
-                                </div>
-                            </li>
-                            <li class="mt32">
-                                <img src="../img/csr_04_img_02.png" alt="사랑의 집수리 사업 사진">
-                                <h4 class="h4_tit">사랑의 집수리 사업</h4>
-                                <div class="textBox">
-
-                                    사랑의 집수리 사업은 저소득 취약계층의 주거환경 개선을 위해 신세계건설이<br>
-                                    지원하고 있는 프로그램입니다. 집수리 사업은 대구시와 하남시 등 지자체와 <br>
-                                    당사간의 민관협력 프로젝트로 신세계건설은 주거형편이 어려운 시민의 <br>
-                                    아픔과 기쁨을 함께 나누는 활동을 전개하고 있습니다.
-
-                                </div>
-                            </li>
-                            <li>
-                                <img src="../img/csr_04_img_03.png" alt="하남시 청소년 복합문화센터 지원 사진">
-                                <h4 class="h4_tit">하남시 청소년 복합문화센터 지원</h4>
-                                <div class="textBox">
-                                    ‘아하(아무거나 하남)’는 하남시에서 청소년 문화놀이터 구축을 위한 <br>
-                                    사업입니다.신세계건설은 하남시, 하남시의회, 하남시청소년수련관 등과의 <br>
-                                    협약을 통해 하남시 청소년들의 미래를 만들어가는데 이바지하고 있습니다.
-                                </div>
-                            </li>
-                            <li>
-                                <img src="../img/csr_04_img_04.png" alt="청소년 교육 및 자립 지원 사진">
-                                <h4 class="h4_tit">청소년 교육 및 자립 지원</h4>
-                                <div class="textBox">
-                                    중, 고등학교 진학을 앞둔 저소득층 가정 청소년들에게 학용품 및 부교재를 <br>
-                                    제공함으로써, 활기찬 새학기를 맞이할 수 있도록 지원합니다. 또한 보호종료<br>
-                                    청소년들에게 자기 계발 기회를 제공하고 안정적인 사회 자립을 도모할 수<br>
-                                    있도록 지원 활동을 하고 있습니다.
-                                </div>
-                            </li>
-                            <li>
-                                <img src="../img/csr_04_img_05.png" alt="취약계층 지원 사진">
-                                <h4 class="h4_tit">취약계층 지원</h4>
-                                <div class="textBox">
-                                    신세계건설은 회사 인근 사회복지시설을 통해 지역사회에 도움이 되고자<br>
-                                    지속적인 봉사활동을 진행하고 있습니다. 서울시 중구자원봉사센터와의<br>
-                                    협약을 맺은 당사는 관내 독거노인 어르신들 반찬 만들기, 경로당 정화활동<br>
-                                    등 취약계층 지원을 통해 어려움을 겪고 있는 지역주민에게 조금이나마<br>
-                                    보탬이 되고자 노력하고 있습니다.                                   
-                                </div>
-                            </li>
-                            <li>
-                                <img src="../img/csr_04_img_06.png" alt="문화재 지킴이 활동 사진">
-                                <h4 class="h4_tit">문화재 지킴이 활동</h4>
-                                <div class="textBox">
-                                    문화재 지킴이 활동은 역사ㆍ문화적으로 의미 있는 문화재를 대상으로 시설<br>
-                                    및 환경정비를 진행하는 활동으로, 특히 임직원 가족 참여 행사로 운영하고<br>
-                                    있습니다. 창경궁 정원 가꾸기, 성균관 문묘 지킴이 등을 통해 문화재<br>
-                                    보존활동의 중요성을 가족과 함께 확인할 수 있는 활동입니다.                                    
-                                </div>
-                            </li>
-                            <li>
-                                <img src="../img/csr_04_img_07.png" alt="친환경 캠페인 사진">
-                                <h4 class="h4_tit">친환경 캠페인</h4>
-                                <div class="textBox">
-                                    신세계건설은 친환경 캠페인의 일환으로 하남시 나무고아원 ‘유아숲체험장’에<br>
-                                    나무심기 봉사활동을 펼쳤습니다. 하남 나무고아원은 도시개발로 인해 옮겨진<br>
-                                    1만5천여본의 나무가 있는 곳이며, 봉사활동을 통해 심어진 나무들로 유아들이<br>
-                                    안전하게 숲을 경험할 수 있는 숲 체험장이 조성되었습니다. <br>
-                                    이외에도 도시 텃밭 가꾸기, 벽화그리기 등 가족과 함께 환경을 생각하는<br>
-                                    활동을 전개하고 있습니다.
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-
-            </div>
-
-
-       
-
-
-
+                        $('.table-tab li').removeClass('on');
+                        $('.table-tab li').eq(idx).addClass('on');
+                
+                
+                        $("div[class^='tab-cont-']").hide();
+                        $('.tab-cont-' + idx ).fadeIn(300);
+                        
+                    }
+                
+                </script>
 
 
 
             <!--****************************************** 여기에 다가 작업 하시면 됩니다. ******************************************-->
 
-
-
-        
-        
         </div>
-
 
         <!-- //content -->
     </div>

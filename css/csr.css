@@ -1,7 +1,22 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "rix";
-  src: url("../font/Rix M Go B.ttf") format("truetype");
+  font-family: "rix_b";
+  src: url("../font/rix_m_go_b.ttf") format("truetype"), url("../font/rix_m_go_b.eot") format("embedded-opentype"), url("../font/rix_m_go_b.woff") format("woff"), url("../font/rix_m_go_b.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "rix_l";
+  src: url("../font/rix_m_go_l.TTF") format("truetype"), url("../font/rix_m_go_l.eot") format("embedded-opentype"), url("../font/rix_m_go_l.woff") format("woff"), url("../font/rix_m_go_l.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "rix_m";
+  src: url("../font/rix_m_go_m.TTF") format("truetype"), url("../font/rix_m_go_m.eot") format("embedded-opentype"), url("../font/rix_m_go_m.woff") format("woff"), url("../font/rix_m_go_m.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gotham_m";
+  src: url("../font/Gotham_Medium.ttf") format("truetype"), url("../font/Gotham_Medium.eot") format("embedded-opentype"), url("../font/Gotham_Medium.woff") format("woff"), url("../font/Gotham_Medium.woff2") format("woff2");
 }
 
 /*layout position absolute 수정사항*/
@@ -10,9 +25,9 @@
 }
 
 #container .mainTitle {
-  font-family: "rix";
+  font-family: "rix_l";
   font-weight: 500;
-  font-size: 28px;
+  font-size: 27px;
   color: #544039;
   line-height: 1.2;
 }
@@ -24,8 +39,7 @@
 #container .h4_tit {
   margin: 24px 0;
   font-size: 16px;
-  font-weight: bold;
-  font-family: "rix";
+  font-family: "rix_m";
   color: #544039;
 }
 
@@ -33,6 +47,7 @@
   padding: 4px;
   position: relative;
   top: -1px;
+  vertical-align: middle;
 }
 
 .Gulim {
@@ -77,7 +92,7 @@
 
 /***********************CSR08*****************************/
 .csr_08_01_wrap {
-  font-family: '돋움','Dotum',sans-serif;
+  font-family: "돋움", "Dotum", sans-serif;
 }
 
 .csr_08_01_wrap .mainTitle {
@@ -86,7 +101,7 @@
 
 .csr_08_01_wrap .h3_tit {
   font-size: 20px;
-  font-family: "rix";
+  font-family: "rix_m";
   color: #544039;
   padding: 32px 0 12px 0;
   letter-spacing: -0.08em;
@@ -191,7 +206,7 @@
 .csr_07_wrap .certificateWrap .leftWrap .cTitle {
   float: left;
   width: 100px;
-  font-family: "rix";
+  font-family: "rix_b";
   font-weight: bold;
   display: block;
 }
@@ -209,14 +224,14 @@
 
 .csr_07_wrap .certificateWrap .rightWrap .imgWrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .csr_07_wrap .certificateWrap .rightWrap .imgWrap img {
-  margin: 0 8px;
+  margin: 0 0 0 24px;
   position: relative;
   top: 10px;
-  left: -40px;
+  width: 156px;
 }
 
 /***********************CSR06*****************************/
@@ -229,12 +244,12 @@
   width: calc(100% / 3);
   text-align: center;
   padding: 6px 0;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
   border-top: 3px solid #544039;
   border-bottom: none;
   background-color: #d6d6d6;
-  font-family: "rix";
+  font-family: "rix_m";
   position: relative;
 }
 
@@ -272,7 +287,7 @@
 .csr_06_wrap .csr_06_01_wrap .h3_tit {
   font-size: 20px;
   font-weight: bold;
-  font-family: "rix";
+  font-family: "rix_m";
   color: #544039;
   padding: 80px 0 12px 0;
 }
@@ -336,7 +351,16 @@
 }
 
 .csr_06_wrap .csr_06_02_wrap .textBox {
-  padding-left: 24px;
+  padding-left: 36px;
+}
+
+.csr_06_wrap .csr_06_02_wrap .h4_tit span {
+  font-family: 'Gotham_m',sans-serif;
+  font-size: 20px;
+  padding-right: 8px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
 }
 
 .csr_06_wrap .csr_06_03_wrap .pt12 {
@@ -344,51 +368,73 @@
 }
 
 .csr_06_wrap .csr_06_03_wrap .certifiWrap {
-  margin-top: 40px;
+  margin-top: 16px;
 }
 
 .csr_06_wrap .csr_06_03_wrap .leftWrap {
   float: left;
-  width: 50%;
+  width: 49%;
   display: flex;
   box-sizing: border-box;
+  border-top: 1px solid #ccc;
 }
 
-.csr_06_wrap .csr_06_03_wrap .leftWrap .textBox {
-  padding-left: 24px;
+.csr_06_wrap .csr_06_03_wrap .leftWrap > img {
+  width: 64px;
+  height: 92px;
+  border: 1px solid #ccc;
 }
 
 .csr_06_wrap .csr_06_03_wrap .rightWrap {
   float: right;
-  width: 50%;
+  width: 49%;
   display: flex;
   box-sizing: border-box;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
-.csr_06_wrap .csr_06_03_wrap .rightWrap .textBox {
-  padding-left: 24px;
+.csr_06_wrap .csr_06_03_wrap .rightWrap > img {
+  width: 64px;
+  border: 1px solid #ccc;
+}
+
+.csr_06_wrap .csr_06_03_wrap .textBox ul {
+  padding: 4px 0;
 }
 
 .csr_06_wrap .csr_06_03_wrap .textBox li {
-  padding: 4px 0;
+  padding: 4px 0px 0px 40px;
   position: relative;
+  color: #887059;
+  font-family: "돋움", "Dotum", sans-serif;
+  letter-spacing: -0.08em;
+  top: -10px;
 }
 
 .csr_06_wrap .csr_06_03_wrap .textBox li img {
-  padding: 8px 0;
+  padding: 12px 0;
+  position: relative;
+  top: -10px;
 }
 
 .csr_06_wrap .csr_06_03_wrap .textBox li span {
   position: absolute;
-  top: 12px;
-  right: -4px;
+  top: 5px;
+  left: 88px;
   font-weight: bold;
-  font-family: "rix";
+  font-family: "굴림","Gulim",sans-serif;
+  color: #544039;
+  font-size: 13px;
+}
+
+.csr_06_wrap .csr_06_03_wrap .textBox li:last-child {
+  padding: 0px 0 4px 40px;
 }
 
 .csr_06_wrap .csr_06_03_wrap .borderB {
-  padding-bottom: 40px;
-  border-bottom: 1px solid #ccc;
+  padding-bottom: 16px;
+  padding-top: 16px;
 }
 
 .csr_06_wrap .csr_06_03_wrap .line {
@@ -399,12 +445,13 @@
 }
 
 .csr_06_wrap .csr_06_03_wrap .pt40 {
-  padding-top: 40px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ccc;
 }
 
 .csr_06_wrap .csr_06_03_wrap .pb24 {
-  padding-bottom: 24px;
-  border-bottom: 1px solid #ccc;
+  padding-bottom: 60px;
 }
 
 /***********************CSR05*****************************/
@@ -482,7 +529,7 @@
 .csr_05_wrap .certificateWrap .leftWrap .cTitle {
   float: left;
   width: 100px;
-  font-family: "rix";
+  font-family: "rix_m";
   font-weight: bold;
   display: block;
 }
@@ -500,14 +547,14 @@
 
 .csr_05_wrap .certificateWrap .rightWrap .imgWrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .csr_05_wrap .certificateWrap .rightWrap .imgWrap img {
-  margin: 0 8px;
+  margin: 0 0px 0 24px;
   position: relative;
   top: 10px;
-  left: -40px;
+  width: 156px;
 }
 
 /***********************CSR04*****************************/
@@ -530,7 +577,7 @@
 }
 
 .csr_04_wrap .infoWrap .h3_tit {
-  font-family: "rix", sans-serif;
+  font-family: "rix_m", sans-serif;
   font-weight: bold;
   font-size: 18px;
   color: #544039;
@@ -592,7 +639,7 @@
 .csr_03_wrap .rightWrap table th {
   color: #544039;
   font-weight: bold;
-  font-family: "rix";
+  font-family: "rix_m";
   background-color: #e4e4e4;
   border: 1px solid #d1d1d1;
   border-top: 3px solid #544039;

@@ -118,8 +118,25 @@ input {
 }
 
 @font-face {
-  font-family: "rix";
-  src: url("../font/Rix M Go B.ttf") format("truetype");
+  font-family: "rix_b";
+  src: url("../font/rix_m_go_b.ttf") format("truetype"),
+    url("../font/rix_m_go_b.eot") format("embedded-opentype"),
+    url("../font/rix_m_go_b.woff") format("woff"),
+    url("../font/rix_m_go_b.woff2") format("woff2");
+}
+@font-face {
+  font-family: "rix_l";
+  src: url("../font/rix_m_go_l.TTF") format("truetype"),
+    url("../font/rix_m_go_l.eot") format("embedded-opentype"),
+    url("../font/rix_m_go_l.woff") format("woff"),
+    url("../font/rix_m_go_l.woff2") format("woff2");
+}
+@font-face {
+  font-family: "rix_m";
+  src: url("../font/rix_m_go_m.TTF") format("truetype"),
+    url("../font/rix_m_go_m.eot") format("embedded-opentype"),
+    url("../font/rix_m_go_m.woff") format("woff"),
+    url("../font/rix_m_go_m.woff2") format("woff2");
 }
 
 #container {
@@ -129,7 +146,7 @@ input {
 #container .h4_tit {
   font-size: 16px;
   font-weight: bold;
-  font-family: "rix";
+  font-family: "rix_b";
   color: #544039;
   margin: 40px 0 0px;
 }
@@ -143,12 +160,12 @@ input {
   width: calc(100% / 2);
   text-align: center;
   padding: 6px 0;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
   border-top: 3px solid #544039;
   border-bottom: none;
   background-color: #d6d6d6;
-  font-family: "rix";
+  font-family: "rix_m";
   position: relative;
 }
 
@@ -186,7 +203,7 @@ table {
 
 table .wb {
   font-weight: bold;
-  font-family: "rix";
+  font-family: "rix_b";
   text-align: center;
 }
 
@@ -196,7 +213,7 @@ table th {
   background-color: #e4e4e4;
   color: #544039;
   font-size: 13px;
-  font-family: "rix";
+  font-family: "rix_b";
   font-weight: bold;
   padding: 14px 10px 14px;
   white-space: nowrap;
