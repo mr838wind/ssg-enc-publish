@@ -335,6 +335,27 @@ body {
 
 <!--****************************************** 컨텐츠 내용(스크립트 포함). ******************************************-->
 
+            <style>
+                /** 세로 정렬은 중간으로  */
+                table tr th {
+                    vertical-align: middle;
+                }
+                /** download css */
+                .regulation a.download {
+                    display: inline-block;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                }
+
+                /** 이사회 구성, 이사회내 위원회에서  : 위원 소개 내용 좌우 줄 맞춤 */
+                .tab-cont-1 .personDesc, .tab-cont-2 .personDesc {
+                    height: 230px;
+                }
+
+            </style>
+
           <div class="tabWrap table-tab">
             <ul>
               <li><a href="#" onclick="changeTab('0')">주주구성</a></li>
@@ -367,7 +388,7 @@ body {
                 <ul class="shareTextWrap">
                   <li>
                     <div class="shareTitle">최대주주와 특수관계인</div>
-                    <div class="shareText">1,707,909주 (42.7%)</div>
+                    <div class="shareText">1,707,907주 (42.7%)</div>
                   </li>
                   <li>
                     <div class="shareTitle">외국인</div>
@@ -430,7 +451,7 @@ body {
                 제3-2호 의안 '사내이사 김정선 선임의 건' 가결(2,439,026주 찬성)
               </p>
               <p>
-                제4호 의안 '감사위원이 되는 사외이사 주주현 선임의
+                제4호 의안 '감사위원이 되는 사외이사 조주현 선임의
                 건' 가결(654,654주 97.4% 찬성)
               </p>
               <p>제5호 의안 '이사보수 한도 책정의 건' 가결(1,925,977주 찬성)</p>
@@ -447,9 +468,9 @@ body {
                 구성되어 있습니다.
               </p>
               <img src="../img/d_organiztion.png" alt="이사회 - 사내이사, 사외이사" />
-              <p class="regulation">
-                이사회 운영규정 <a href="" class="download">다운로드 <i class="icon-angle-right"></i></a>
-              </p>
+                <p class="regulation">
+                    이사회 운영규정 <a href="/resource/downloads/00_board_of_directors.pdf" target="_blank" class="download">다운로드 <i class="icon-angle-right"></i></a>
+                </p>
 
             </div>
 
@@ -461,24 +482,24 @@ body {
                 <!-- <h4 class="hide">사내이사</h4> -->
                 <ul class="personWrap">
                   <li>
-                    <div class="personImg">
+                    <!--<div class="personImg">
                       <img src="../img/img_person16.png" alt="윤명규 사내이사" />
-                    </div>
+                    </div>-->
                     <div class="personDesc">
                       <p class="h4_tit">윤명규 사내이사</p>
                       <ul>
                         <li class="ptb8">이사선임 : 2017.03/임기3년 (2020.03~)</li>
                         <li>現 신세계건설(주) 대표이사</li>
-                        <li>(주)이마트위드미 대표이사</li>
-                        <li>(주)이마트 물류담당 상무</li>
-                        <li class="pb40">(주)이마트 인사담당 상무</li>
+                        <li>前 (주)이마트위드미 대표이사</li>
+                        <li>前 (주)이마트 물류담당 상무</li>
+                        <li class="pb40">前 (주)이마트 인사담당 상무</li>
                       </ul>
                     </div>
                   </li>
                   <li>
-                    <div class="personImg">
+                    <!--<div class="personImg">
                       <img src="../img/img_person16.png" alt="정두영 사내이사" />
-                    </div>
+                    </div>-->
                     <div class="personDesc">
                       <p class="h4_tit">정두영 사내이사</p>
                       <ul>
@@ -490,9 +511,9 @@ body {
                     </div>
                   </li>
                   <li>
-                    <div class="personImg">
+                    <!--<div class="personImg">
                       <img src="../img/img_person16.png" alt="김정선 사내이사" />
-                    </div>
+                    </div>-->
                     <div class="personDesc">
                       <p class="h4_tit">김정선 사내이사</p>
                       <ul>
@@ -509,9 +530,9 @@ body {
               <div class="outPerson">
                 <ul class="personWrap">
                   <li>
-                    <div class="personImg">
+                    <!--<div class="personImg">
                       <img src="../img/img_person16.png" alt="최진구 사외이사" />
-                    </div>
+                    </div>-->
                     <div class="personDesc">
                       <p class="h4_tit">최진구 사외이사</p>
                       <ul>
@@ -524,15 +545,14 @@ body {
                     </div>
                   </li>
                   <li>
-                    <div class="personImg">
+                    <!--<div class="personImg">
                       <img src="../img/img_person16.png" alt="조주현 사외이사" />
-                    </div>
+                    </div>-->
                     <div class="personDesc">
                       <p class="h4_tit">조주현 사외이사</p>
                       <ul>
                         <li class="ptb8">이사선임 : 2019.03/임기 2년 (2021.03~)</li>
                         <li>現 건국대 부동산학과 명예교수</li>
-                        <li>現 중앙 부동산가격 공시위원회 부위원장</li>
                         <li>前 지방 투자사업 관리센터 자문위원회 위원</li>
                         <li>前 경기도 도시계획위원회 위원</li>
                         <li>前 서울시 도시계획위원회 위원</li>
@@ -540,14 +560,14 @@ body {
                     </div>
                   </li>
                   <li>
-                    <div class="personImg">
+                    <!--<div class="personImg">
                       <img src="../img/img_person16.png" alt="정인창 사외이사" />
-                    </div>
+                    </div>-->
                     <div class="personDesc">
                       <p class="h4_tit">정인창 사외이사</p>
                       <ul>
                         <li class="ptb8">이사선임 : 2020.03/임기 2년(2020.03~)</li>
-                        <li>現 변호사 정인창 볍률사무소 대표</li>
+                        <li>現 법무법인 인유 대표 변호사</li>
                         <li>前 부산지검 검사장</li>
                         <li>前 법무부 법무실장</li>
                         <li class="pb40">前 춘천지검 검사장</li>
@@ -558,9 +578,17 @@ body {
               </div>
             </div>
 
+
+              <style>
+                  /** 이사회 권한 아래 li 항목 앞에 점 표시  */
+                  .my-table-li-style li {
+                      list-style: disc;
+                  }
+              </style>
+
             <div class="permisWrap">
               <h4 class="h4_tit">이사회 권한</h4>
-              <table class="table_1">
+              <table class="table_1 my-table-li-style">
                 <tbody>
                   <tr>
                     <th>주주총회에 관한 사항</th>
@@ -594,7 +622,7 @@ body {
                         <li>사채의 모집</li>
                         <li>준비금의 자본금 전입</li>
                         <li>전환사채의 발행</li>
-                        <li>신주인 수건부 사채의 발행</li>
+                        <li>신주인 수권부 사채의 발행</li>
                         <li>중요한 자산의 처분 및 양도, 대규모 재산의 차입</li>
                       </ul>
                     </td>
@@ -670,19 +698,23 @@ body {
 
 
             <div class="inspectionWrap clearFix">
-              <p class="h4_tit borderB">위원회 구성 - 감사위원회<span class="regulation">각 위원회 운영규정<a href=""download="" class="download">다운로드<i class="icon-angle-right"></i></a></span></p>
+              <p class="h4_tit borderB">위원회 구성 - 감사위원회
+                  <span class="regulation">각 위원회 운영규정
+                      <a href="/resource/downloads/10_committee_inspection.pdf" target="_blank" class="download">다운로드<i class="icon-angle-right"></i></a>
+                  </span>
+              </p>
               
       
               <div class="inPerson">
                 <ul class="personWrap">
                   <li>
-                    <div class="personImg">
+                    <!--<div class="personImg">
                       <img src="../img/img_person16.png" alt="최진구 감사위원장" />
-                    </div>
+                    </div>-->
                     <div class="personDesc">
                       <p class="h4_tit">최진구 감사위원장</p>
                       <ul>
-                        <li class="ptb8">이사선임 : 2020.03 / 임기 2년 (2020.03)</li>
+                        <li class="ptb8">이사선임 : 2020.03 / 임기 2년 (2020.03~)</li>
                         <li>前 대전지방국세청 청장</li>
                         <li>前 국세청 개인납세국 국장</li>
                         <li>前 국세청 소득지원국 국장</li>
@@ -691,16 +723,16 @@ body {
                     </div>
                   </li>
                   <li>
-                    <div class="personImg">
+                    <!--<div class="personImg">
                       <img src="../img/img_person16.png" alt="정인창 감사위원" />
-                    </div>
+                    </div>-->
                     <div class="personDesc">
                       <p class="h4_tit">정인창 감사위원</p>
                       <ul>
                         <li class="ptb8">
                           이사선임 : 2020.03 / 임기 2년 (2020.03 ~)
                         </li>
-                        <li>現 변호사 정인창 법률사무소 대표</li>
+                        <li>現 법무법인 인유 대표 변호사</li>
                         <li>前 부산지검 검사장</li>
                         <li>前 법무부 법무실장</li>
                         <li class="pb40">前 춘천지검 검사장</li>
@@ -712,15 +744,14 @@ body {
               <div class="outPerson">
                 <ul class="personWrap">
                   <li>
-                    <div class="personImg">
+                    <!--<div class="personImg">
                       <img src="../img/img_person16.png" alt="조주현 감사위원" />
-                    </div>
+                    </div>-->
                     <div class="personDesc">
                       <p class="h4_tit">조주현 감사위원</p>
                       <ul>
                         <li class="ptb8">이사선임 : 2019.03 / 임기 2년 (2021.03~)</li>
                         <li>現 건국대 부동산학과 명예교수</li>
-                        <li>前 중앙 부동산가격 공시위원회 부위원장</li>
                         <li>前 지방 투자사업 관리센터 자문위원회 위원</li>
                         <li>前 경기도 도시계획위원회 위원</li>
                         <li>前 서울시 도시계획위원회 위원</li>
@@ -731,15 +762,19 @@ body {
               </div>
             </div>
       
-            <div class="recommendWrap">
-              <p class="h4_tit borderB">위원회 구성 - 사외이사후보추천위원회</p>
+            <div class="recommendWrap clearFix">
+                <p class="h4_tit borderB">위원회 구성 - 사외이사후보추천위원회
+                    <span class="regulation">사외이사후보추천위원회 운영규정
+                      <a href="/resource/downloads/10_committee_recommend.pdf" target="_blank" class="download">다운로드<i class="icon-angle-right"></i></a>
+                    </span>
+                </p>
       
               <div class="inPerson">
                 <ul class="personWrap">
                   <li>
-                    <div class="personImg">
+                    <!--<div class="personImg">
                       <img src="../img/img_person16.png" alt="김정선 사내이사" />
-                    </div>
+                    </div>-->
                     <div class="personDesc">
                       <p class="h4_tit">김정선 사내이사</p>
                       <ul>
@@ -751,9 +786,9 @@ body {
                     </div>
                   </li>
                   <li>
-                    <div class="personImg">
+                    <!--<div class="personImg">
                       <img src="../img/img_person16.png" alt="조주현 사외이사" />
-                    </div>
+                    </div>-->
                     <div class="personDesc">
                       <p class="h4_tit">조주현 사외이사</p>
                       <ul>
@@ -761,7 +796,6 @@ body {
                           이사선임 : 2019.03 / 임기 2년 (2021.03 ~)
                         </li>
                         <li>現 건국대 부동산학과 명예교수</li>
-                        <li>前 중앙 부동산가격 공시위원회 부위원장</li>
                         <li>前 지방 투자사업 관리센터 자문위원회 위원</li>
                         <li>前 경기도 도시계획위원회 위원</li>
                         <li class="pb40">前 서울시 도시계획위원회 위원</li>
@@ -773,9 +807,9 @@ body {
               <div class="outPerson">
                 <ul class="personWrap">
                   <li>
-                    <div class="personImg">
+                    <!--<div class="personImg">
                       <img src="../img/img_person16.png" alt="최진구 사외이사 증명사진" />
-                    </div>
+                    </div>-->
                     <div class="personDesc">
                       <p class="h4_tit">최진구 사외이사 (추천위원장)</p>
                       <ul>
@@ -789,14 +823,14 @@ body {
                   </li>
       
                   <li>
-                      <div class="personImg">
+                      <!--<div class="personImg">
                         <img src="../img/img_person16.png" alt="정인창 사외이사 증명사진" />
-                      </div>
+                      </div>-->
                       <div class="personDesc">
                         <p class="h4_tit">정인창 사외이사</p>
                         <ul>
                           <li class="ptb8">이사선임 : 2020.03 / 임기 2년 (2021.03~)</li>
-                          <li>現 변호사 정인창 볍률사무소 대표</li>
+                          <li>現 법무법인 인유 대표 변호사</li>
                           <li>前 부산지검 검사장</li>
                           <li>前 법무부 법무실장</li>
                           <li>前 춘천지검 검사장</li>
@@ -809,10 +843,161 @@ body {
               
             </div>
 
+              <!-- 신규 추가: 내부거래위원회 -->
+              <div class="innerTradeWrap clearFix">
+                  <p class="h4_tit borderB">위원회 구성 - 내부거래위원회
+                      <span class="regulation">내부거래위원회 운영규정
+                  <a href="/resource/downloads/10_committee_inner.pdf" target="_blank" class="download">다운로드<i class="icon-angle-right"></i></a>
+                </span>
+                  </p>
 
+                  <div class="inPerson">
+                      <ul class="personWrap">
+                          <li>
+                              <!--
+                              <div class="personImg">
+                                <img src="/resource/img/img_person16.png" alt="조주현 사외이사" />
+                              </div>
+                              -->
+                              <div class="personDesc">
+                                  <p class="h4_tit">조주현 사외이사 (위원장)</p>
+                                  <ul>
+                                      <li class="ptb8">
+                                          이사선임 : 2019.03 / 임기 2년 (2021.03 ~)
+                                      </li>
+                                      <li>現 건국대 부동산학과 명예교수</li>
+
+                                      <li>前 지방 투자사업 관리센터 자문위원회 위원</li>
+                                      <li>前 경기도 도시계획위원회 위원</li>
+                                      <li class="pb40">前 서울시 도시계획위원회 위원</li>
+                                  </ul>
+                              </div>
+                          </li>
+                          <li>
+                              <!--
+                              <div class="personImg">
+                                <img src="/resource/img/img_person16.png" alt="김정선 사내이사" />
+                              </div>
+                              -->
+                              <div class="personDesc">
+                                  <p class="h4_tit">김정선 사내이사</p>
+                                  <ul>
+                                      <li class="ptb8">이사선임 : 2018.03 / 임기 3년 (2021.03~)</li>
+                                      <li>現 신세계건설㈜ 지원담당 상무</li>
+                                      <li>前 ㈜신세계 조선호텔 경영관리팀장</li>
+                                      <li class="pb40">前 ㈜신세계 이마트부문 회계팀장</li>
+                                  </ul>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="outPerson">
+                      <ul class="personWrap">
+                          <li>
+                              <!--
+                                <div class="personImg">
+                                  <img src="/resource/img/img_person16.png" alt="정인창 사외이사 증명사진" />
+                                </div>
+                                -->
+                              <div class="personDesc">
+                                  <p class="h4_tit">정인창 사외이사</p>
+                                  <ul>
+                                      <li class="ptb8">이사선임 : 2020.03 / 임기 2년 (2021.03~)</li>
+                                      <li>現 법무법인 인유 대표 변호사</li>
+                                      <li>前 부산지검 검사장</li>
+                                      <li>前 법무부 법무실장</li>
+                                      <li>前 춘천지검 검사장</li>
+                                  </ul>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+
+
+              </div>
+
+
+              <!-- 신규 추가: ESG위원회 -->
+              <div class="esgWrap clearFix">
+                  <p class="h4_tit borderB">위원회 구성 - ESG위원회
+                      <span class="regulation">ESG위원회 운영규정
+                  <a href="/resource/downloads/10_committee_esg.pdf" target="_blank" class="download">다운로드<i class="icon-angle-right"></i></a>
+                </span>
+                  </p>
+
+                  <div class="inPerson">
+                      <ul class="personWrap">
+                          <li>
+                              <!--
+                                <div class="personImg">
+                                  <img src="/resource/img/img_person16.png" alt="정인창 사외이사 증명사진" />
+                                </div>
+                                -->
+                              <div class="personDesc">
+                                  <p class="h4_tit">정인창 사외이사 (위원장)</p>
+                                  <ul>
+                                      <li class="ptb8">이사선임 : 2020.03 / 임기 2년 (2021.03~)</li>
+                                      <li>現 법무법인 인유 대표 변호사</li>
+                                      <li>前 부산지검 검사장</li>
+                                      <li>前 법무부 법무실장</li>
+                                      <li>前 춘천지검 검사장</li>
+                                  </ul>
+                              </div>
+                          </li>
+                          <li>
+                              <!--
+                              <div class="personImg">
+                                <img src="/resource/img/img_person16.png" alt="김정선 사내이사" />
+                              </div>
+                              -->
+                              <div class="personDesc">
+                                  <p class="h4_tit">김정선 사내이사</p>
+                                  <ul>
+                                      <li class="ptb8">이사선임 : 2018.03 / 임기 3년 (2021.03~)</li>
+                                      <li>現 신세계건설㈜ 지원담당 상무</li>
+                                      <li>前 ㈜신세계 조선호텔 경영관리팀장</li>
+                                      <li class="pb40">前 ㈜신세계 이마트부문 회계팀장</li>
+                                  </ul>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="outPerson">
+                      <ul class="personWrap">
+                          <li>
+                              <!--
+                              <div class="personImg">
+                                <img src="/resource/img/img_person16.png" alt="최진구 사외이사 증명사진" />
+                              </div>
+                              -->
+                              <div class="personDesc">
+                                  <p class="h4_tit">최진구 사외이사</p>
+                                  <ul>
+                                      <li class="ptb8">이사선임 : 2020.03 / 임기 2년 (2020.03~)</li>
+                                      <li>前 대전지방국세청 청장</li>
+                                      <li>前 국세청 개인납세국 국장</li>
+                                      <li>前 국세청 소득지원국 국장</li>
+                                      <li class="pb16">前 서초세무서장</li>
+                                  </ul>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+
+
+              </div>
 
 
           </div>
+
+
+            <style>
+                /** header 부분 글씨  */
+                .my-header-font {
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+            </style>
 
           <div class="tab-cont-3">
 
@@ -829,7 +1014,7 @@ body {
                   <col style="width: 65px" />
                   <col style="width: 65px" />
                 </colgroup>
-                <thead>
+                <thead  class="my-header-font">
                   <tr>
                     <th rowspan="4" scope="col">회차</th>
                     <th rowspan="4" scope="col">개최일자</th>
@@ -889,7 +1074,7 @@ body {
                   </tr>
                   <tr>
                     <td>2021.01.29</td>
-                    <td>이사회 운영구정 개정의 건</td>
+                    <td>이사회 운영규정 개정의 건</td>
                     <td>가결</td>
                     <td>찬성</td>
                     <td>찬성</td>
@@ -1045,8 +1230,8 @@ body {
                     <td class="bold">11회</td>
                     <td>2021.04.14</td>
                     <td>
-                      광주농성등주항복합(빌리브트레비체)리파이낸싱 대출 업무협약
-                      체결의 건
+                        광주농성동주상복합(빌리브트레비체)리파이낸싱 대출 업무협약
+                        체결의 건
                     </td>
                     <td>가결</td>
                     <td>찬성</td>
@@ -1054,7 +1239,7 @@ body {
                     <td>찬성</td>
                   </tr>
                   <tr>
-                    <td rowspan="2" class="bold">11회</td>
+                    <td rowspan="2" class="bold">12회</td>
                     <td>2021.04.19</td>
                     <td>주요주주 등과의 거래 승인의 건</td>
                     <td>가결</td>
@@ -1071,17 +1256,104 @@ body {
                     <td>-</td>
                   </tr>
                   <tr>
-                    <td class="bold">12회</td>
-                    <td>2021.04.21</td>
-                    <td>
-                      아난티 강남호텔 신축송사 리파이낸싱 대출약정 체결 및
-                      책임준공확약 등 제공의 건
-                    </td>
-                    <td>가결</td>
-                    <td>찬성</td>
-                    <td>찬성</td>
-                    <td>찬성</td>
+                      <td class="bold">13회</td>
+                      <td>2021.04.21</td>
+                      <td>
+                          아난티 강남호텔 신축공사 리파이낸싱 대출약정 체결 및
+                          책임준공확약 등 제공의 건
+                      </td>
+                      <td>가결</td>
+                      <td>찬성</td>
+                      <td>찬성</td>
+                      <td>찬성</td>
                   </tr>
+
+
+                  <!-- 14 -->
+                  <tr>
+                      <td rowspan="3" class="bold">14회</td>
+                      <td>2021.04.28</td>
+                      <td>
+                          대구 본동 주상복합 개발사업 리파이낸싱 대출 업무협약 체결의 건
+                      </td>
+                      <td>가결</td>
+                      <td>찬성</td>
+                      <td>찬성</td>
+                      <td>찬성</td>
+                  </tr>
+                  <tr>
+                      <td>2021.04.28</td>
+                      <td>이천 안흥동 272-6 주상복합 사업 및 대출약정 체결의 건</td>
+                      <td>가결</td>
+                      <td>찬성</td>
+                      <td>찬성</td>
+                      <td>찬성</td>
+                  </tr>
+                  <tr>
+                      <td>2021.04.28</td>
+                      <td>이천 안흥동 270 주상복합 사업 및 대출약정 체결의 건</td>
+                      <td>가결</td>
+                      <td>찬성</td>
+                      <td>찬성</td>
+                      <td>찬성</td>
+                  </tr>
+                  <!-- //14 -->
+
+                  <!-- 15 -->
+                  <tr>
+                      <td rowspan="5" class="bold">15회</td>
+                      <td>2021.05.17</td>
+                      <td>
+                          주요주주 등과의 거래 승인의 건
+                      </td>
+                      <td>가결</td>
+                      <td>찬성</td>
+                      <td>찬성</td>
+                      <td>찬성</td>
+                  </tr>
+                  <tr>
+                      <td>2021.05.17</td>
+                      <td>
+                          내부거래위원회 설치 및 운영규정 제정의 건
+                      </td>
+                      <td>가결</td>
+                      <td>찬성</td>
+                      <td>찬성</td>
+                      <td>찬성</td>
+                  </tr>
+                  <tr>
+                      <td>2021.05.17</td>
+                      <td>
+                          내부거래위원회 위원 선임의 건
+                      </td>
+                      <td>가결</td>
+                      <td>찬성</td>
+                      <td>찬성</td>
+                      <td>찬성</td>
+                  </tr>
+                  <tr>
+                      <td>2021.05.17</td>
+                      <td>
+                          ESG위원회 설치 및 운영규정 제정의 건
+                      </td>
+                      <td>가결</td>
+                      <td>찬성</td>
+                      <td>찬성</td>
+                      <td>찬성</td>
+                  </tr>
+                  <tr>
+                      <td>2021.05.17</td>
+                      <td>
+                          2021년 4월 경영실적 보고
+                      </td>
+                      <td>보고</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                  </tr>
+                  <!-- //15 -->
+
+
                 </tbody>
               </table>
             </div>
@@ -1090,7 +1362,7 @@ body {
               <h4 class="h4_tit">위원회 운영내역(2021년)</h4>
               <table>
                 <colgroup>
-                  <col style="width: 80px" />
+                  <col style="width: 120px" />
                   <col style="width: 100px" />
                   <col />
                   <col style="width: 80px" />
@@ -1105,10 +1377,12 @@ body {
                     <th scope="col">개최일자</th>
                     <th scope="col">의안내용</th>
                     <th scope="col">가결여부</th>
-                    <th scope="col">김정선</th>
+
                     <th scope="col">최진구</th>
                     <th scope="col">조주현</th>
                     <th scope="col">정인창</th>
+                    <th scope="col">김정선</th>
+
                   </tr>
                 </thead>
                 <tbody>
@@ -1127,11 +1401,10 @@ body {
       
               <table class="lTable">
                 <colgroup>
-                  <col style="width: 80px" />
+                  <col style="width: 120px" />
                   <col style="width: 100px" />
                   <col />
                   <col style="width: 80px" />
-                  <col style="width: 65px" />
                   <col style="width: 65px" />
                   <col style="width: 65px" />
                   <col style="width: 65px" />
@@ -1142,7 +1415,6 @@ body {
                     <th scope="col">개최일자</th>
                     <th scope="col">의안내용</th>
                     <th scope="col">가결여부</th>
-                    <th scope="col">김정선</th>
                     <th scope="col">최진구</th>
                     <th scope="col">조주현</th>
                     <th scope="col">정인창</th>
@@ -1151,11 +1423,10 @@ body {
       
                 <tbody>
                   <tr>
-                    <td rowspan="4" class="bold">감사위원회</td>
+                    <td rowspan="5" class="bold">감사위원회</td>
                     <td>2021.01.29</td>
                     <td>2020년 내부회계관리제도 운영실태 보고</td>
                     <td>보고</td>
-                    <td>-</td>
                     <td>-</td>
                     <td>-</td>
                     <td>-</td>
@@ -1167,12 +1438,10 @@ body {
                     <td>찬성</td>
                     <td>찬성</td>
                     <td>찬성</td>
-                    <td>찬성</td>
                   </tr>
                   <tr>
                     <td>2020년 감사결과 보고</td>
                     <td>보고</td>
-                    <td>-</td>
                     <td>-</td>
                     <td>-</td>
                     <td>-</td>
@@ -1183,10 +1452,101 @@ body {
                     <td>-</td>
                     <td>-</td>
                     <td>-</td>
-                    <td>-</td>
+                  </tr>
+                  <tr>
+                      <td rowspan="1">2021.05.17</td>
+                      <td>지정감사인 선임 관련 문서화 사항 변경 승인의 건</td>
+                      <td>가결</td>
+                      <td>찬성</td>
+                      <td>찬성</td>
+                      <td>찬성</td>
                   </tr>
                 </tbody>
               </table>
+
+                <!-- 신규추가: 내부거래위원회 -->
+                <table class="lTable">
+                    <colgroup>
+                        <col style="width: 120px">
+                        <col style="width: 100px">
+                        <col>
+                        <col style="width: 80px">
+                        <col style="width: 65px">
+                        <col style="width: 65px">
+                        <col style="width: 65px">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">위원회명</th>
+                        <th scope="col">개최일자</th>
+                        <th scope="col">의안내용</th>
+                        <th scope="col">가결여부</th>
+                        <th scope="col">조주현</th>
+                        <th scope="col">정인창</th>
+                        <th scope="col">김정선</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td rowspan="5" class="bold">내부거래위원회</td>
+                        <td>2021.05.17</td>
+                        <td>내부거래위원회 위원장 선임의 건</td>
+                        <td>가결</td>
+                        <td>찬성</td>
+                        <td>찬성</td>
+                        <td>찬성</td>
+                    </tr>
+                    <tr>
+                        <td>2021.05.17</td>
+                        <td>신세계 기업집단 계열회사 간 상품 또는 용역 내부거래 심의 건</td>
+                        <td>가결</td>
+                        <td>찬성</td>
+                        <td>찬성</td>
+                        <td>찬성</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!-- //신규추가: 내부거래위원회 -->
+
+
+                <!-- 신규추가: ESG위원회 -->
+                <table class="lTable">
+                    <colgroup>
+                        <col style="width: 120px">
+                        <col style="width: 100px">
+                        <col>
+                        <col style="width: 80px">
+                        <col style="width: 65px">
+                        <col style="width: 65px">
+                        <col style="width: 65px">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">위원회명</th>
+                        <th scope="col">개최일자</th>
+                        <th scope="col">의안내용</th>
+                        <th scope="col">가결여부</th>
+                        <th scope="col">정인창</th>
+                        <th scope="col">최진구</th>
+                        <th scope="col">김정선</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td rowspan="3" class="bold">ESG위원회</td>
+                        <td>2021.05.17</td>
+                        <td>ESG위원회 설치 및 운영규정 제정의 건</td>
+                        <td>가결</td>
+                        <td>찬성</td>
+                        <td>찬성</td>
+                        <td>찬성</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!-- //신규추가: ESG위원회 -->
+
               <p class="ref">"-" 표시 사항은 보고안건임</p>
             </div>
 
@@ -1254,7 +1614,8 @@ body {
                 </tr>
               </tbody>
             </table>
-            <p class="ref">※평기기관 : 한국기업지배구조원(KCGS)</p>
+
+            <p class="ref">※평가기관 : 한국기업지배구조원(KCGS)</p>
 
           </div>
 
