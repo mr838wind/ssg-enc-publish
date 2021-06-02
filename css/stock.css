@@ -1,0 +1,244 @@
+/**/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #565760;
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+hr {
+  display: none;
+}
+
+em,
+address,
+i {
+  font-style: normal;
+}
+
+body {
+  font-family: "Dotum", sans-serif;
+  font-size: 13px;
+  color: #333;
+  line-height: 1.6;
+  letter-spacing: -0.05em;
+}
+
+.blind {
+  position: absolute;
+  top: -99999px;
+}
+
+button,
+label,
+input {
+  cursor: pointer;
+}
+
+.skip {
+  text-align: center;
+}
+
+.skip a {
+  display: block;
+  position: absolute;
+  top: -100px;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background: #00529b;
+  color: white;
+  font-size: 20px;
+}
+
+.skip a:focus {
+  top: 0;
+}
+
+.clearFix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.center {
+  width: 1200px;
+  margin: 0 auto;
+  /*    background-color:rgba(255,0,0,0.5);*/
+}
+
+
+
+.contents_wrap {
+  position: relative;
+}
+
+#container {
+  /* overflow: auto; */
+}
+
+#container .contents_wrap {
+  position: relative;
+  top: 0px;
+  margin-top: 55px;
+}
+
+#footer {
+  position: absolute;
+  /* margin-top: 50px; */
+  bottom: -80px;
+}
+
+#wrapper {
+  height: auto;
+  margin-bottom: 0px;
+  padding-bottom: 50px;
+}
+
+#wrap {
+  height: auto;
+  /* min-height: auto !important; */
+}
+
+#container {
+  /* padding-left: 0px; */
+  /* float: none; */
+}
+
+@font-face {
+  font-family: "rix";
+  src: url("../font/Rix M Go B.ttf") format("truetype");
+}
+
+#container {
+  width: 850px;
+}
+
+#container .h4_tit {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "rix";
+  color: #544039;
+  margin: 40px 0 0px;
+}
+
+#container ul {
+  display: flex;
+  justify-content: center;
+}
+
+#container ul > li {
+  width: calc(100% / 2);
+  text-align: center;
+  padding: 6px 0;
+  font-size: 13px;
+  font-weight: bold;
+  border-top: 3px solid #544039;
+  border-bottom: none;
+  background-color: #d6d6d6;
+  font-family: "rix";
+  position: relative;
+}
+
+#container ul > li::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #d1d1d1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#container ul .on {
+  border-bottom: none;
+  background-color: #fff;
+  border-top: 3px solid #da2128;
+}
+
+#container ul .on a {
+  color: #da2128;
+}
+
+#container .borderB {
+  border-bottom: 1px solid #333;
+  padding: 12px 0;
+}
+
+table {
+  border-collapse: collapse;
+  /* margin-top: 40px; */
+  width: 100%;
+}
+
+table .wb {
+  font-weight: bold;
+  font-family: "rix";
+  text-align: center;
+}
+
+table th {
+  border: 1px solid #d1d1d1;
+  border-top: 2px solid #544039;
+  background-color: #e4e4e4;
+  color: #544039;
+  font-size: 13px;
+  font-family: "rix";
+  font-weight: bold;
+  padding: 14px 10px 14px;
+  white-space: nowrap;
+}
+
+table th:first-child {
+  border-left: none;
+}
+
+table th:last-child {
+  border-right: none;
+}
+
+table td {
+  border: 1px solid #d1d1d1;
+  padding: 14px 10px 14px;
+  text-align: right;
+}
+
+table td:first-child {
+  border-left: none;
+}
+
+table td:last-child {
+  border-right: none;
+}
+
+.cRed{
+  color: #da2128;
+  font-weight: bold;
+}
+
+.rText{
+  color:#544039;
+  text-align: right;
+  font-family: 'rix';
+  margin-bottom: 8px;
+}
+
+.h4_tit span{
+  font-family: '돋움','Dotum',sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #000;
+}
