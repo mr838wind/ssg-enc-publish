@@ -1,0 +1,12 @@
+## 메뉴 파일 매칭
+
+governance_0530.html  -- 투자정보 > 경영정보 > 지배구조
+article_0530.html  -- 투자정보 > 경영정보 > 정관
+stock_0530.html  -- 투자정보 > 주식정보 > 주주구성
+csr_03.html  -- CSR > 투명경영
+csr_04.html  -- CSR > 사회공헌
+csr_05.html  -- CSR > 품질경영
+csr_06.html  -- CSR > 안전보건경영
+csr_07.html  -- CSR > 친환경경영
+csr_08_01.html  -- CSR > 동반성장 > 개요
+tab_text.html  -- CSR > 동반성장 > 4대실천사항
