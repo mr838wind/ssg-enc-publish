@@ -144,9 +144,9 @@ input {
 }
 
 #container .h4_tit {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
-  font-family: "rix_b";
+  font-family: "rix_m";
   color: #544039;
   margin: 40px 0 0px;
 }
@@ -165,7 +165,7 @@ input {
   border-top: 3px solid #544039;
   border-bottom: none;
   background-color: #d6d6d6;
-  font-family: "rix_m";
+  font-family: "rix_l";
   position: relative;
 }
 
@@ -191,8 +191,9 @@ input {
 }
 
 #container .borderB {
-  border-bottom: 1px solid #333;
-  padding: 12px 0;
+  border-bottom: 1px solid #544039;
+  padding: 6px 0 6px;
+  margin: 12px 0 24px;
 }
 
 table {
@@ -203,7 +204,7 @@ table {
 
 table .wb {
   font-weight: bold;
-  font-family: "rix_b";
+  font-family: "돋움","Dotum",sans-serif;
   text-align: center;
 }
 
@@ -213,9 +214,9 @@ table th {
   background-color: #e4e4e4;
   color: #544039;
   font-size: 13px;
-  font-family: "rix_b";
+  font-family: "rix_m";
   font-weight: bold;
-  padding: 14px 10px 14px;
+  padding: 7.5px 10px 7.5px;
   white-space: nowrap;
 }
 
@@ -229,8 +230,11 @@ table th:last-child {
 
 table td {
   border: 1px solid #d1d1d1;
-  padding: 14px 10px 14px;
+  padding: 7.5px 10px 7.5px;
   text-align: right;
+  font-family: '돋움','Dotum','sans-serif';
+  letter-spacing: 0;
+
 }
 
 table td:first-child {
