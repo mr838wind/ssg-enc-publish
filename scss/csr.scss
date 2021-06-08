@@ -563,9 +563,8 @@ $red: #da2128;
 .csr_04_wrap {
 
   .textWrap {
-    font-family: "굴림","Gulim","돋움", "Dotum", sans-serif;
+    font-family: "돋움", "Dotum", sans-serif;
     letter-spacing: -0.08em;
-    line-height: 1.6;
     span {
       color: $red;
     }
@@ -579,7 +578,7 @@ $red: #da2128;
     .h3_tit {
       font-family: "rix_m", sans-serif;
       font-weight: bold;
-      font-size: 20px;
+      font-size: 18px;
       color: $메인컬러;
       border-bottom: 1px solid #ccc;
       padding: 24px 0 12px 0;
@@ -619,7 +618,7 @@ $red: #da2128;
   }
   .rightWrap {
     float: right;
-    margin: 70px 50px 0 0px;
+    margin: 110px 50px 0 0px;
     .textWrap {
       letter-spacing: -0.05em;
       .textBox {
@@ -637,7 +636,7 @@ $red: #da2128;
         font-family: "rix_m";
         background-color: #e4e4e4;
         border: 1px solid #d1d1d1;
-        border-top: 2px solid $메인컬러;
+        border-top: 3px solid $메인컬러;
         padding: 8px 20px;
         &:first-child {
           border-left: none;
