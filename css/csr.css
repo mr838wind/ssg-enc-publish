@@ -26,10 +26,10 @@
 
 #container .mainTitle {
   font-family: "rix_l";
-  font-weight: 500;
   font-size: 27px;
   color: #544039;
   line-height: 1.2;
+  letter-spacing: -0.04em;
 }
 
 #container .mainTitle span {
