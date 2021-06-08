@@ -559,8 +559,9 @@
 
 /***********************CSR04*****************************/
 .csr_04_wrap .textWrap {
-  font-family: "돋움", "Dotum", sans-serif;
+  font-family: "굴림","Gulim","돋움", "Dotum", sans-serif;
   letter-spacing: -0.08em;
+  line-height: 1.6;
 }
 
 .csr_04_wrap .textWrap span {
@@ -579,7 +580,7 @@
 .csr_04_wrap .infoWrap .h3_tit {
   font-family: "rix_m", sans-serif;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   color: #544039;
   border-bottom: 1px solid #ccc;
   padding: 24px 0 12px 0;
@@ -618,7 +619,7 @@
 
 .csr_03_wrap .rightWrap {
   float: right;
-  margin: 110px 50px 0 0px;
+  margin: 70px 50px 0 0px;
 }
 
 .csr_03_wrap .rightWrap .textWrap {
@@ -642,7 +643,7 @@
   font-family: "rix_m";
   background-color: #e4e4e4;
   border: 1px solid #d1d1d1;
-  border-top: 3px solid #544039;
+  border-top: 2px solid #544039;
   padding: 8px 20px;
 }
 
