@@ -29,7 +29,7 @@ i {
 }
 
 body {
-  font-family: "Malgun Gothic", sans-serif;
+  font-family: "돋움","Dotum", sans-serif;
   font-size: 14px;
   color: #333;
   line-height: 1.6;
@@ -150,7 +150,7 @@ input {
   font-size: 16px;
   color: #544039;
   margin: 40px 0 20px;
-  font-family: "rix_b";
+  font-family: "rix_m";
   font-weight: bold;
 }
 
@@ -159,7 +159,7 @@ input {
 }
 
 .governance .shareGraphWrap img {
-  width: 400px;
+  /* width: 400px; */
 }
 
 .governance .shareGraphWrap .shareContent {
@@ -238,8 +238,8 @@ input {
 
 .governance .shareGraphWrap .shareContent .shareTextWrap li .shareTitle {
   float: left;
-  font-family: "rix_b";
-  /* font-weight: bold; */
+  font-family: "rix_m";
+  font-weight: bold;
   padding-right: 40px;
 }
 
@@ -264,8 +264,8 @@ input {
   border-top: 3px solid #544039;
   border-collapse: collapse;
   background-color: #e4e4e4;
-  font-family: "rix_b";
-  /* font-weight: bold; */
+  font-family: "rix_m";
+  font-weight: bold;
   color: #544039;
   padding: 8px 60px;
 }
@@ -297,9 +297,21 @@ input {
 
 /* gvernance_02 */
 
+/* 210603 추가 ↓*/
+.infoWrap .imgWrap{
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+}
+/*210603 추가 ↑*/
+
 .infoWrap img {
   text-align: center;
   padding: 40px 0;
+  /*210603 추가 ↓*/
+  /* width: 700px; */
+  /*210603 추가 ↑*/
 }
 
 .infoWrap .regulation {
@@ -409,6 +421,7 @@ input {
 .permisWrap table li {
   list-style-type: disc;
   margin: 8px 0;
+  font-size: 13px;
 }
 
 .permisWrap table th {
@@ -416,9 +429,9 @@ input {
   border: 1px solid #d1d1d1;
   border-top: 2px solid #544039;
   color: #544039;
-  padding: 12px 40px;
+  padding: 12px;
   width: calc(100% / 3);
-  font-family: 'rix_b';
+  font-family: 'rix_m';
   font-weight: bold;
   white-space: nowrap;
 }
@@ -427,6 +440,21 @@ input {
   border: 1px solid #d1d1d1;
   padding: 20px 0px 20px 32px;
 }
+
+/*210603 추가 ↓*/
+.permisWrap table td:first-child{
+  border-left: none;
+}
+.permisWrap table th:first-child{
+  border-left: none;
+}
+.permisWrap table td:last-child{
+  border-right: none;
+}
+.permisWrap table th:last-child{
+  border-right: none;
+}
+/*210603 추가 ↑*/
 
 
 /* gvernance_03 */
@@ -528,7 +556,7 @@ input {
   border-bottom: 1px solid #333;
   margin: 40px 0 12px;
   padding-bottom: 12px;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: bold;
   color: #544039;
 }
@@ -559,10 +587,10 @@ input {
   background-color: #e4e4e4;
   color: #544039;
   font-size: 13px;
-  /* font-weight: bold; */
+  font-weight: bold;
   padding: 8px 10px 8px;
   white-space: nowrap;
-  font-family: 'rix_b';
+  font-family: 'rix_m';
   vertical-align: middle;
 }
 
@@ -601,7 +629,7 @@ input {
   text-align: center;
   padding: 12px 0;
   font-size: 15px;
-  /* font-weight: bold; */
+  font-weight: bold;
   border: 1px solid #d1d1d1;
   border-top: 3px solid #544039;
   border-bottom: none;
@@ -656,7 +684,7 @@ input {
   font-weight: bold;
   padding: 8px 10px 8px;
   white-space: nowrap;
-  font-family: 'rix_b';
+  font-family: 'rix_m';
 }
 
 .tab-cont-5 table th:first-child {
