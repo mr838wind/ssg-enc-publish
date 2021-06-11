@@ -181,9 +181,8 @@ input {
   text-align: center;
   padding: 6px 0px;
   font-size: 14px;
-  font-weight: 400;
-  font-family: 'rix_b';
-  transform: rotate(0.1deg);
+  font-weight: 600;
+  font-family: 'rix_l';
   border-top: 3px solid #544039;
   border-bottom: none;
   background-color: #d6d6d6;
