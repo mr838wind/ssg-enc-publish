@@ -313,6 +313,9 @@
 
 
                     <link rel="stylesheet" type="text/css" href="../css/article.css?t=20210601" />
+                    <!-- css 추가 화살표 추가하려면 fontello-embedded.css 연결필요-->
+                    <link rel="stylesheet" href="../css/fontello-embedded.css">
+
                     <!-- 임시 layout 수정 -->
                     <style>
 
@@ -336,7 +339,7 @@
                         }
 
                         #footer {
-                            position: absolute;
+                            position: relative;
                             margin-top: 50px;
                             bottom: -80px;
                         }
@@ -362,18 +365,18 @@
 
 
                     <!--****************************************** 컨텐츠 내용(스크립트 포함). ******************************************-->
-
+        
                     <div class="tabWrap table-tab">
                         <ul>
-                            <li><a href="#" onclick="changeTab('0')">1장 총칙</a></li>
-                            <li><a href="#" onclick="changeTab('1')">2장 주식</a></li>
-                            <li><a href="#" onclick="changeTab('2')">3장 사채</a></li>
-                            <li><a href="#" onclick="changeTab('3')">4장 주주총회</a></li>
+                            <li><a href="#" onclick="changeTab('0')">1장 총칙<i class="icon-down-dir"></i></a></li>
+                            <li><a href="#" onclick="changeTab('1')">2장 주식<i class="icon-down-dir"></i></a></li>
+                            <li><a href="#" onclick="changeTab('2')">3장 사채<i class="icon-down-dir"></i></a></li>
+                            <li><a href="#" onclick="changeTab('3')">4장 주주총회<i class="icon-down-dir"></i></a></li>
                             <li>
-                                <a href="#" onclick="changeTab('4')">5장 이사·이사회·감사위원회</i></a>
+                                <a href="#" onclick="changeTab('4')">5장 이사·이사회·감사위원회<i class="icon-down-dir"></i></a>
                             </li>
-                            <li><a href="#" onclick="changeTab('5')">6장 계산</a></li>
-                            <li><a href="#" onclick="changeTab('6')">7장 부칙</a></li>
+                            <li><a href="#" onclick="changeTab('5')">6장 계산<i class="icon-down-dir"></i></a></li>
+                            <li><a href="#" onclick="changeTab('6')">7장 부칙<i class="icon-down-dir"></i></a></li>
                         </ul>
                     </div>
                     <div class="downloadWrap clearFix">
