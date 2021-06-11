@@ -19,6 +19,11 @@
   src: url("../font/Gotham_Medium.ttf") format("truetype"), url("../font/Gotham_Medium.eot") format("embedded-opentype"), url("../font/Gotham_Medium.woff") format("woff"), url("../font/Gotham_Medium.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "Gotham_Book";
+  src: url("../font/Gotham_Book_Regular.ttf") format("truetype"), url("../font/Gotham_Book_Regular.eot") format("embedded-opentype"), url("../font/Gotham_Book_Regular.woff") format("woff"), url("../font/Gotham_Book_Regular.woff2") format("woff2");
+}
+
 /*layout position absolute 수정사항*/
 #container {
   width: 850px;
@@ -27,9 +32,11 @@
 #container .mainTitle {
   font-family: "rix_l";
   font-size: 27px;
+  font-weight: 400;
   color: #544039;
   line-height: 1.2;
   letter-spacing: -0.04em;
+  transform: rotate(-0.1deg);
 }
 
 #container .mainTitle span {
@@ -39,13 +46,14 @@
 #container .h4_tit {
   margin: 24px 0;
   font-size: 16px;
-  font-weight: bold;
-  font-family: "rix_m";
+  font-weight: 400;
+  font-family: "rix_b";
   color: #544039;
+  transform: rotate(-0.1deg);
 }
 
 #container .h4_tit img {
-  padding: 4px;
+  padding-right: 8px;
   position: relative;
   top: -1px;
   vertical-align: middle;
@@ -70,7 +78,7 @@
 }
 
 #footer {
-  position: absolute;
+  position: relative;
   /* margin-top: 50px; */
   bottom: -80px;
 }
@@ -102,8 +110,10 @@
 
 .csr_08_01_wrap .h3_tit {
   font-size: 20px;
-  font-family: "rix_m";
+  font-family: "rix_b";
+  font-weight: 400;
   color: #544039;
+  transform: rotate(-0.1deg);
   padding: 32px 0 12px 0;
   letter-spacing: -0.08em;
 }
@@ -244,14 +254,15 @@
 .tabWrap ul > li {
   width: calc(100% / 3);
   text-align: center;
-  padding: 6px 0;
+  padding: 6px 0 6px 10px;
   font-size: 14px;
-  font-weight: bold;
+  font-family: "rix_b";
+  font-weight: 400;
   border-top: 3px solid #544039;
   border-bottom: none;
   background-color: #d6d6d6;
-  font-family: "rix_m";
   position: relative;
+  transform: rotate(-0.05deg);
 }
 
 .tabWrap ul > li::after {
@@ -259,7 +270,7 @@
   display: block;
   width: 1px;
   height: 100%;
-  background-color: #d1d1d1;
+  background-color: #c1c0bf;
   position: absolute;
   top: 0;
   left: 0;
@@ -287,8 +298,9 @@
 
 .csr_06_wrap .csr_06_01_wrap .h3_tit {
   font-size: 20px;
-  font-weight: bold;
-  font-family: "rix_m";
+  font-weight: 400;
+  font-family: "rix_b";
+  transform: rotate(-0.1deg);
   color: #544039;
   padding: 80px 0 12px 0;
 }
@@ -356,7 +368,7 @@
 }
 
 .csr_06_wrap .csr_06_02_wrap .h4_tit span {
-  font-family: 'Gotham_m',sans-serif;
+  font-family: "Gotham_m", sans-serif;
   font-size: 20px;
   padding-right: 8px;
   vertical-align: middle;
@@ -364,7 +376,12 @@
   top: -1px;
 }
 
-.csr_06_wrap .csr_06_03_wrap .pt12 {
+.csr_06_wrap .csr_06_03_wrap .h4_tit {
+  font-size: 20px !important;
+  margin-top: 40px !important;
+}
+
+.csr_06_wrap .csr_06_03_wrap .m .pt12 {
   padding-top: 12px;
 }
 
@@ -424,7 +441,7 @@
   top: 5px;
   left: 88px;
   font-weight: bold;
-  font-family: "굴림","Gulim",sans-serif;
+  font-family: "굴림", "Gulim", sans-serif;
   color: #544039;
   font-size: 13px;
 }
@@ -460,6 +477,10 @@
   /*textWrap*/
   /*graphWrap*/
   /*certificateWrap*/
+}
+
+.csr_05_wrap .mainTitle {
+  margin-bottom: 16px;
 }
 
 .csr_05_wrap .textWrap .leftWrap {
@@ -530,9 +551,10 @@
 .csr_05_wrap .certificateWrap .leftWrap .cTitle {
   float: left;
   width: 100px;
-  font-family: "rix_m";
-  font-weight: bold;
+  font-family: "rix_b";
+  font-weight: 400;
   display: block;
+  transform: rotate(-0.1deg);
 }
 
 .csr_05_wrap .certificateWrap .leftWrap .cDate {
@@ -560,7 +582,7 @@
 
 /***********************CSR04*****************************/
 .csr_04_wrap .textWrap {
-  font-family: "굴림","Gulim","돋움", "Dotum", sans-serif;
+  font-family: "굴림", "Gulim", "돋움", "Dotum", sans-serif;
   letter-spacing: -0.08em;
   line-height: 1.6;
 }
@@ -579,9 +601,10 @@
 }
 
 .csr_04_wrap .infoWrap .h3_tit {
-  font-family: "rix_m", sans-serif;
-  font-weight: bold;
+  font-family: "rix_b", sans-serif;
+  font-weight: 400;
   font-size: 20px;
+  transform: rotate(-0.1deg);
   color: #544039;
   border-bottom: 1px solid #ccc;
   padding: 24px 0 12px 0;
@@ -605,12 +628,22 @@
 .csr_04_wrap .infoWrap ul li .textBox {
   letter-spacing: -0.05em;
   line-height: 1.6;
-  font-family: "돋움", "Dotum", sans-serif;
+  font-family: "굴림", "Gulim", sans-serif;
+}
+
+.csr_04_wrap .Gulim {
+  font-size: 12px;
+  margin-top: 10px;
 }
 
 /***********************CSR03*****************************/
 .csr_03_wrap {
   font-family: "돋움", "Dotum", sans-serif;
+}
+
+.csr_03_wrap .gotham {
+  font-family: "Gotham_Book";
+  color: #544039 !important;
 }
 
 .csr_03_wrap .imgWrap {
@@ -640,8 +673,9 @@
 
 .csr_03_wrap .rightWrap table th {
   color: #544039;
-  font-weight: bold;
-  font-family: "rix_m";
+  font-weight: 400;
+  font-family: "rix_b";
+  transform: rotate(-0.1deg);
   background-color: #e4e4e4;
   border: 1px solid #d1d1d1;
   border-top: 2px solid #544039;

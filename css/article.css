@@ -110,45 +110,47 @@ input {
 
 #container .h4_tit {
   font-size: 16px;
-  font-weight: bold;
-  font-family: 'rix_m';
+  font-weight: 400;
+  font-family: 'rix_b';
+  transform: rotate(-0.1deg);
   color: #544039;
-  margin: 40px 0 0px;
+  margin: 20px 0 0px;
   position: relative;
   padding-left: 24px;
 }
 
 #container .articleTitle {
   margin: 24px 0 12px;
-  font-family: 'rix_m';
+  font-family: '돋움','Dotum';
   font-weight: bold;
-  font-size: 13px;
+  font-size: 12px;
   color: #544039;
 }
 
 #container .circle {
-  display: block;
-  width: 8px;
-  height: 8px;
-  background-color: #fff;
+  /* display: block; */
+  width: 3px;
+  height: 3px;
+  /* background-color: #fff; */
   border-radius: 50%;
   position: absolute;
   top: 50%;
-  left: 4px;
+  left: 10.5px;
   transform: translateY(-50%);
 }
 
 #container .h4_tit::before {
   content: "";
   display: block;
-  width: 16px;
-  height: 16px;
-  background-color: #da2128;
+  width: 9px;
+  height: 9px;
+  border: 3px solid #da2128;
   border-radius: 50%;
   position: absolute;
   top: 50%;
-  left: 0px;
+  left: 8px;
   transform: translateY(-50%);
+  box-sizing: border-box;
 }
 
 #container .articleTitle {
@@ -157,6 +159,7 @@ input {
 
 #container .textBox {
   margin-left: 36px;
+  font-size: 12px;
 }
 
 #container .textBox li {
@@ -178,8 +181,9 @@ input {
   text-align: center;
   padding: 6px 0px;
   font-size: 14px;
-  font-weight: bold;
-  font-family: 'rix_m';
+  font-weight: 400;
+  font-family: 'rix_b';
+  transform: rotate(-0.1deg);
   border-top: 3px solid #544039;
   border-bottom: none;
   background-color: #d6d6d6;
@@ -200,10 +204,13 @@ input {
   display: block;
   width: 1px;
   height: 100%;
-  background-color: #d1d1d1;
+  background-color: #c1c0bf;
   position: absolute;
   top: 0;
   left: 0;
+}
+.tabWrap ul li a{
+  padding-left: 10px;
 }
 
 #container .tabWrap ul .on {

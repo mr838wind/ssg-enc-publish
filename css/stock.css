@@ -145,8 +145,9 @@ input {
 
 #container .h4_tit {
   font-size: 14px;
-  font-weight: bold;
-  font-family: "rix_m";
+  font-weight: 400;
+  font-family: "rix_b";
+  transform: rotate(-0.1deg);
   color: #544039;
   margin: 40px 0 0px;
 }
@@ -161,11 +162,12 @@ input {
   text-align: center;
   padding: 6px 0;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 400;
+  font-family: "rix_b";
+  transform: rotate(-0.1deg);
   border-top: 3px solid #544039;
   border-bottom: none;
   background-color: #d6d6d6;
-  font-family: "rix_l";
   position: relative;
 }
 
@@ -206,6 +208,8 @@ table .wb {
   font-weight: bold;
   font-family: "돋움","Dotum",sans-serif;
   text-align: center;
+  background-color: #fbfbfa;
+  color: #544039;
 }
 
 table th {
@@ -214,8 +218,9 @@ table th {
   background-color: #e4e4e4;
   color: #544039;
   font-size: 13px;
-  font-family: "rix_m";
-  font-weight: bold;
+  font-family: "rix_b";
+  font-weight: 400;
+  transform: rotate(-0.1deg);
   padding: 7.5px 10px 7.5px;
   white-space: nowrap;
 }

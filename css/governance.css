@@ -29,7 +29,7 @@ i {
 }
 
 body {
-  font-family: "돋움","Dotum", sans-serif;
+  font-family: "돋움", "Dotum", sans-serif;
   font-size: 14px;
   color: #333;
   line-height: 1.6;
@@ -110,11 +110,12 @@ input {
   text-align: center;
   padding: 6px 0;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 400;
+  font-family: "rix_b";
+  transform: rotate(-0.1deg);
   border-top: 3px solid #544039;
   border-bottom: none;
   background-color: #d6d6d6;
-  font-family: "rix_m";
   position: relative;
 }
 .tabWrap ul > li::after {
@@ -122,7 +123,7 @@ input {
   display: block;
   width: 1px;
   height: 100%;
-  background-color: #d1d1d1;
+  background-color: #c1c0bf;
   position: absolute;
   top: 0;
   left: 0;
@@ -132,6 +133,10 @@ input {
   border-bottom: none;
   border-top: 3px solid #da2128;
   background-color: #fff;
+}
+
+.tabWrap ul li a{
+  padding-left: 10px;
 }
 
 .tabWrap ul .on a {
@@ -144,14 +149,16 @@ input {
 
 .Gulim {
   font-family: "굴림", "Gulim";
+  font-size: 12px;
 }
 
 .h4_tit {
   font-size: 16px;
   color: #544039;
   margin: 40px 0 20px;
-  font-family: "rix_m";
-  font-weight: bold;
+  font-family: "rix_b", sans-serif;
+  font-weight: 400;
+  transform: rotate(-0.1deg);
 }
 
 .governance .shareGraphWrap {
@@ -261,18 +268,24 @@ input {
 
 .governance .currentWrap th {
   border: 1px solid #d1d1d1;
-  border-top: 3px solid #544039;
+  border-top: 2px solid #544039;
   border-collapse: collapse;
   background-color: #e4e4e4;
-  font-family: "rix_m";
-  font-weight: bold;
+  font-size: 13px;
+  font-family: "rix_b";
+  font-weight: 400;
   color: #544039;
-  padding: 8px 60px;
+  padding: 0px 60px;
+  height: 36px;
+  vertical-align: middle;
+  box-sizing: border-box;
 }
 
 .governance .currentWrap td {
   border: 1px solid #d1d1d1;
-  padding: 8px 0;
+  box-sizing: border-box;
+  height: 36px;
+  font-size: 13px;
 }
 
 .governance .currentWrap .ftd {
@@ -298,7 +311,7 @@ input {
 /* gvernance_02 */
 
 /* 210603 추가 ↓*/
-.infoWrap .imgWrap{
+.infoWrap .imgWrap {
   text-align: center;
   margin: 0 auto;
   display: block;
@@ -331,11 +344,19 @@ input {
 
 .line {
   border-bottom: 1px solid #e9e9e9;
-  margin: 12px 0;
+  margin: 10px 0;
 }
 
 .directorWrap {
-  margin-top: 40px;
+  /* margin-top: 40px; */
+}
+
+.directorWrap .h4_tit {
+  font-size: 14px;
+  font-family: "rix_b", sans-serif;
+  font-weight: 400;
+  transform: rotate(-0.1deg);
+  margin: 10px 0;
 }
 
 .directorWrap .inPerson {
@@ -355,6 +376,8 @@ input {
 .directorWrap .inPerson .personWrap .personDesc {
   float: left;
   padding-left: 12px;
+  font-size: 13px;
+  font-family: "돋움", "Dotum";
 }
 
 .directorWrap .inPerson .personWrap .personDesc .ptb8 {
@@ -390,6 +413,8 @@ input {
 .directorWrap .outPerson .personWrap .personDesc {
   float: left;
   padding-left: 12px;
+  font-size: 13px;
+  font-family: "돋움", "Dotum";
 }
 
 .directorWrap .outPerson .personWrap .personDesc .ptb8 {
@@ -407,6 +432,8 @@ input {
 }
 .permisWrap .h4_tit {
   border-bottom: 1px solid #333;
+  font-size: 14px;
+  padding-bottom: 10px;
 }
 
 .permisWrap .table_1 {
@@ -431,9 +458,11 @@ input {
   color: #544039;
   padding: 12px;
   width: calc(100% / 3);
-  font-family: 'rix_m';
-  font-weight: bold;
+  font-size: 13px;
+  font-family: "rix_b";
+  font-weight: 400;
   white-space: nowrap;
+  transform: rotate(-0.1deg);
 }
 
 .permisWrap table td {
@@ -442,22 +471,37 @@ input {
 }
 
 /*210603 추가 ↓*/
-.permisWrap table td:first-child{
+.permisWrap table td:first-child {
   border-left: none;
 }
-.permisWrap table th:first-child{
+.permisWrap table th:first-child {
   border-left: none;
 }
-.permisWrap table td:last-child{
+.permisWrap table td:last-child {
   border-right: none;
 }
-.permisWrap table th:last-child{
+.permisWrap table th:last-child {
   border-right: none;
 }
 /*210603 추가 ↑*/
 
-
 /* gvernance_03 */
+.inspectionWrap .h4_tit{
+    font-size: 14px;
+    font-family: "rix_b", sans-serif;
+    font-weight: 400;
+    transform: rotate(-0.1deg);
+    margin: 10px 0;
+}
+
+.recommendWrap .h4_tit{
+  font-size: 14px;
+  font-family: "rix_b", sans-serif;
+  font-weight: 400;
+  transform: rotate(-0.1deg);
+  margin: 10px 0; 
+}
+
 .shape_table {
   max-width: 800px;
   margin-top: 60px;
@@ -465,13 +509,12 @@ input {
 
 .borderB {
   border-bottom: 1px solid #ccc;
-  padding: 12px 0;
+  padding: 40px 0 10px;
 }
 
 .inPerson {
   width: 400px;
   float: left;
-  padding-top: 30px;
 }
 
 .inPerson .personWrap .personImg {
@@ -486,6 +529,8 @@ input {
 .inPerson .personWrap .personDesc {
   float: left;
   padding-left: 12px;
+  font-size: 13px;
+  font-family: "돋움", "Dotum";
 }
 
 .inPerson .personWrap .personDesc .ptb8 {
@@ -504,7 +549,7 @@ input {
   float: right;
   font-weight: 400;
   font-size: 12px;
-  font-family: '돋움','Dotum',sans-serif;
+  font-family: "돋움", "Dotum", sans-serif;
 }
 
 .regulation .download {
@@ -521,7 +566,6 @@ input {
 .outPerson {
   width: 400px;
   float: right;
-  padding-top: 30px;
 }
 
 .outPerson .personWrap .personImg {
@@ -536,6 +580,8 @@ input {
 .outPerson .personWrap .personDesc {
   float: left;
   padding-left: 12px;
+  font-size: 13px;
+  font-family: "돋움", "Dotum";
 }
 
 .outPerson .personWrap .personDesc .ptb8 {
@@ -556,9 +602,10 @@ input {
   border-bottom: 1px solid #333;
   margin: 40px 0 12px;
   padding-bottom: 12px;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: 400;
   color: #544039;
+  transform: rotate(-0.1deg);
 }
 
 .tab-cont-3 .lTable {
@@ -567,10 +614,12 @@ input {
 
 .tab-cont-3 .ref {
   margin: 4px;
+  font-size: 13px;
 }
 
 .tab-cont-3 .bold {
   font-weight: bold;
+  font-size: 13px;
 }
 
 .tab-cont-3 table {
@@ -587,10 +636,11 @@ input {
   background-color: #e4e4e4;
   color: #544039;
   font-size: 13px;
-  font-weight: bold;
+  font-weight: 400;
+  font-family: "rix_b";
+  transform: rotate(-0.1deg);
   padding: 8px 10px 8px;
   white-space: nowrap;
-  font-family: 'rix_m';
   vertical-align: middle;
 }
 
@@ -605,6 +655,7 @@ input {
 .tab-cont-3 table td {
   border: 1px solid #d1d1d1;
   padding: 14px 10px 14px;
+  font-size: 13px;
 }
 
 .tab-cont-3 table td:first-child {
@@ -651,15 +702,21 @@ input {
 }
 
 /* gvernance_06 */
+.tab-cont-5 .h4_tit {
+  font-size: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #333;
+}
+
 .tab-cont-5 .ref {
   margin: 4px;
+  font-size: 13px;
 }
 
 .tab-cont-5 .bold {
   font-weight: bold;
   color: #544039;
-  font-size:13px;
-
+  font-size: 13px;
 }
 
 .tab-cont-5 table {
@@ -676,15 +733,20 @@ input {
 }
 
 .tab-cont-5 table th {
+  width: calc(100%/6);
+  height: 36px;
   border: 1px solid #d1d1d1;
   border-top: 2px solid #333;
   background-color: #e4e4e4;
   color: #544039;
+  font-family: "rix_b";
   font-size: 13px;
-  font-weight: bold;
-  padding: 8px 10px 8px;
+  font-weight: 400;
+  transform: rotate(-0.1deg);
+  padding: 0 10px;
   white-space: nowrap;
-  font-family: 'rix_m';
+  vertical-align: middle;
+  box-sizing: border-box;
 }
 
 .tab-cont-5 table th:first-child {
@@ -697,7 +759,10 @@ input {
 
 .tab-cont-5 table td {
   border: 1px solid #d1d1d1;
-  padding: 14px 10px 14px;
+  padding: 0 10px;
+  height: 36px;
+  font-size: 13px;
+  box-sizing: border-box;
 }
 
 .tab-cont-5 table td:first-child {
