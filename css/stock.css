@@ -147,7 +147,7 @@ input {
   font-size: 14px;
   font-weight: 400;
   font-family: "rix_b";
-  transform: rotate(-0.1deg);
+  transform: rotate(0.1deg);
   color: #544039;
   margin: 40px 0 0px;
 }
@@ -164,7 +164,7 @@ input {
   font-size: 14px;
   font-weight: 400;
   font-family: "rix_b";
-  transform: rotate(-0.1deg);
+  transform: rotate(0.1deg);
   border-top: 3px solid #544039;
   border-bottom: none;
   background-color: #d6d6d6;
@@ -220,7 +220,7 @@ table th {
   font-size: 13px;
   font-family: "rix_b";
   font-weight: 400;
-  transform: rotate(-0.1deg);
+  transform: rotate(0.1deg);
   padding: 7.5px 10px 7.5px;
   white-space: nowrap;
 }
