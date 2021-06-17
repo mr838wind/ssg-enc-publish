@@ -296,8 +296,9 @@
 
 .csr_06_wrap {
   /***********************안전보건방침*********************************/
-  /***********************경영활동*********************************/
-  /***********************경영인증*********************************/
+  /***********************안전활동*********************************/
+  /***********************안전인증*********************************/
+  /*재해현황 0617 추가*/
 }
 
 .csr_06_wrap .csr_06_01_wrap .mainTitle {
@@ -478,6 +479,60 @@
 
 .csr_06_wrap .csr_06_03_wrap .pb24 {
   padding-bottom: 60px;
+}
+
+.csr_06_wrap .csr_06_04_wrap .img_title {
+  margin: 40px 0;
+}
+
+.csr_06_wrap .csr_06_04_wrap .csr_06_04_graph {
+  text-align: right;
+  margin-bottom: 70px;
+}
+
+.csr_06_wrap .csr_06_04_wrap table {
+  border-collapse: collapse;
+  font-size: 13px;
+  text-align: center;
+  margin: 32px 0 40px;
+}
+
+.csr_06_wrap .csr_06_04_wrap table th {
+  color: #544039;
+  font-weight: 400;
+  font-family: "rix_b";
+  transform: rotate(0.1deg);
+  background-color: #e4e4e4;
+  border: 1px solid #d1d1d1;
+  border-top: 2px solid #544039;
+  width: calc(100%/6);
+  height: 36px;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.csr_06_wrap .csr_06_04_wrap table th:first-child {
+  border-left: none;
+}
+
+.csr_06_wrap .csr_06_04_wrap table th:last-child {
+  border-right: none;
+}
+
+.csr_06_wrap .csr_06_04_wrap table td {
+  border: 1px solid #d1d1d1;
+  padding: 0px 20px;
+  font-family: "돋움", "Dotum", "san-serif";
+  height: 36px;
+  box-sizing: border-box;
+}
+
+.csr_06_wrap .csr_06_04_wrap table td:first-child {
+  border-left: none;
+}
+
+.csr_06_wrap .csr_06_04_wrap table td:last-child {
+  border-right: none;
 }
 
 /***********************CSR05*****************************/
@@ -746,5 +801,5 @@
 }
 
 #container .content {
-  min-height: 950px;
+  min-height: 1050px;
 }
