@@ -166,13 +166,83 @@
 }
 
 .csr_07_wrap .textWrap .rightWrap {
-  float: right;
+  float: left;
   width: 50%;
+  height: 234px;
 }
 
 .csr_07_wrap .textWrap .textBox {
   margin-top: 24px;
   white-space: nowrap;
+}
+
+.csr_07_wrap .textWrap .tableWrap {
+  position: relative;
+  top: 60px;
+  margin-bottom: 60px;
+}
+
+.csr_07_wrap .textWrap .tableWrap .h5_tit {
+  font-size: 14px;
+  font-family: 'rix_b';
+  transform: rotate(-0.1deg);
+  letter-spacing: -0.05;
+  color: #544039;
+  padding-bottom: 4px;
+  margin-top: 24px;
+  border-bottom: 1px solid #544039;
+}
+
+.csr_07_wrap .textWrap .tableWrap table {
+  border-collapse: collapse;
+  font-size: 13px;
+  text-align: center;
+  margin: 20px 0 8px;
+}
+
+.csr_07_wrap .textWrap .tableWrap table th {
+  color: #544039;
+  font-weight: 400;
+  font-family: "rix_b";
+  transform: rotate(0.1deg);
+  background-color: #e4e4e4;
+  border: 1px solid #d1d1d1;
+  border-top: 2px solid #544039;
+  height: 36px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  letter-spacing: -0.05em;
+}
+
+.csr_07_wrap .textWrap .tableWrap table th:first-child {
+  border-left: none;
+}
+
+.csr_07_wrap .textWrap .tableWrap table th:last-child {
+  border-right: none;
+}
+
+.csr_07_wrap .textWrap .tableWrap table td {
+  border: 1px solid #d1d1d1;
+  font-family: "돋움", "Dotum", "san-serif";
+  width: calc(100%/8);
+  height: 36px;
+  box-sizing: border-box;
+}
+
+.csr_07_wrap .textWrap .tableWrap table td:first-child {
+  border-left: none;
+  width: 8%;
+}
+
+.csr_07_wrap .textWrap .tableWrap table td:last-child {
+  border-right: none;
+}
+
+.csr_07_wrap .textWrap .tableWrap table .wb {
+  font-weight: bold;
+  background-color: #fbfbfa;
+  letter-spacing: -0.05em;
 }
 
 .csr_07_wrap .textWrap .pt12 {
