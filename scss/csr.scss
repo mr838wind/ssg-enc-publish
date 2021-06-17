@@ -30,6 +30,13 @@ $red: #da2128;
     url("../font/Gotham_Medium.woff") format("woff"),
     url("../font/Gotham_Medium.woff2") format("woff2");
 }
+@font-face {
+  font-family: "Gotham_Book";
+  src: url("../font/Gotham_Book_Regular.ttf") format("truetype"),
+    url("../font/Gotham_Book_Regular.eot") format("embedded-opentype"),
+    url("../font/Gotham_Book_Regular.woff") format("woff"),
+    url("../font/Gotham_Book_Regular.woff2") format("woff2");
+}
 
 /*layout position absolute 수정사항*/
 @mixin layoutModify {
@@ -48,7 +55,7 @@ $red: #da2128;
   }
 
   #footer {
-    position: absolute;
+    position: relative;
     /* margin-top: 50px; */
     bottom: -80px;
   }
@@ -78,20 +85,20 @@ $red: #da2128;
     > li {
       width: calc(100% / 3);
       text-align: center;
-      padding: 6px 0;
+      padding: 6px 0 6px 10px;
       font-size: 14px;
-      font-weight: bold;
+      font-family: "rix_l";
+      font-weight: 600;
       border-top: 3px solid $메인컬러;
       border-bottom: none;
       background-color: #d6d6d6;
-      font-family: "rix_m";
       position: relative;
       &::after {
         content: "";
         display: block;
         width: 1px;
         height: 100%;
-        background-color: #d1d1d1;
+        background-color: #c1c0bf;
         position: absolute;
         top: 0;
         left: 0;
@@ -114,10 +121,12 @@ $red: #da2128;
 
   .mainTitle {
     font-family: "rix_l";
-    font-weight: 500;
     font-size: 27px;
+    font-weight: 400;
     color: $메인컬러;
     line-height: 1.2;
+    letter-spacing: -0.04em;
+    transform: rotate(0.1deg);
 
     span {
       color: $red;
@@ -127,16 +136,24 @@ $red: #da2128;
   .h4_tit {
     margin: 24px 0;
     font-size: 16px;
-    // font-weight: bold;
-    font-family: "rix_m";
+    font-weight: 400;
+    font-family: "rix_b";
     color: $메인컬러;
+    transform: rotate(0.1deg);
     img {
-      padding: 4px;
+      padding-right: 8px;
       position: relative;
       top: -1px;
       vertical-align: middle;
     }
   }
+}
+
+.clearFix::before,
+.clearFix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .Gulim {
@@ -152,8 +169,10 @@ $red: #da2128;
   }
   .h3_tit {
     font-size: 20px;
-    font-family: "rix_m";
+    font-family: "rix_b";
+    font-weight: 400;
     color: $메인컬러;
+    transform: rotate(0.1deg);
     padding: 32px 0 12px 0;
     letter-spacing: -0.08em;
   }
@@ -198,12 +217,78 @@ $red: #da2128;
       }
     }
     .rightWrap {
-      float: right;
+      float: left;
       width: 50%;
+      height: 234px;
     }
     .textBox {
       margin-top: 24px;
       white-space: nowrap;
+    }
+
+    .tableWrap{
+      position: relative;
+      top: 60px;
+      margin-bottom: 60px;
+   
+      .h5_tit{
+        font-size: 14px;
+        font-family: 'rix_b';
+        transform: rotate(-0.1deg);
+        letter-spacing: -0.05;
+        color:$메인컬러;
+        padding-bottom: 4px;
+        margin-top: 24px;
+        border-bottom: 1px solid $메인컬러;
+      }
+
+      table {
+        border-collapse: collapse;
+        font-size: 13px;
+        text-align: center;
+        margin: 20px 0 8px;
+        th {
+          color: $메인컬러;
+          font-weight: 400;
+          font-family: "rix_b";
+          transform: rotate(0.1deg);
+          background-color: #e4e4e4;
+          border: 1px solid #d1d1d1;
+          border-top: 2px solid $메인컬러;
+          height: 36px;
+          vertical-align: middle;
+          box-sizing: border-box;
+          letter-spacing: -0.05em;
+          &:first-child {
+            border-left: none;
+          }
+          &:last-child {
+            border-right: none;
+          }
+        }
+        td {
+          border: 1px solid #d1d1d1;
+          font-family: "돋움", "Dotum", "san-serif";
+          width: calc(100%/8);
+          height: 36px;
+          box-sizing: border-box;
+          &:first-child {
+            border-left: none;
+            width: 8%;
+          }
+          &:last-child {
+            border-right: none;
+          }
+        }
+        .wb{
+          font-weight: bold;
+          background-color: #fbfbfa;
+          // width: 92px;
+          letter-spacing: -0.05em;
+        }
+      
+        
+      }
     }
 
     .pt12 {
@@ -249,13 +334,15 @@ $red: #da2128;
       .cTitle {
         float: left;
         width: 100px;
-        font-family: "rix_b";
+        font-family: "돋움", "Dotum";
         font-weight: bold;
         display: block;
       }
       .cDate {
         float: right;
         width: 300px;
+        position: relative;
+        left: -12px;
       }
     }
 
@@ -289,8 +376,9 @@ $red: #da2128;
     }
     .h3_tit {
       font-size: 20px;
-      font-weight: bold;
-      font-family: "rix_m";
+      font-weight: 400;
+      font-family: "rix_b";
+      transform: rotate(0.1deg);
       color: $메인컬러;
       padding: 80px 0 12px 0;
     }
@@ -298,7 +386,7 @@ $red: #da2128;
       width: 100%;
     }
   }
-  /***********************경영활동*********************************/
+  /***********************안전활동*********************************/
   .csr_06_02_wrap {
     .csr_06_02_01,
     .csr_06_02_02,
@@ -358,10 +446,10 @@ $red: #da2128;
     .textBox {
       padding-left: 36px;
     }
-    
-    .h4_tit{
-      span{
-        font-family: 'Gotham_m',sans-serif;
+
+    .h4_tit {
+      span {
+        font-family: "Gotham_m", sans-serif;
         font-size: 20px;
         padding-right: 8px;
         vertical-align: middle;
@@ -370,9 +458,13 @@ $red: #da2128;
       }
     }
   }
-  /***********************경영인증*********************************/
+  /***********************안전인증*********************************/
   .csr_06_03_wrap {
-    .pt12 {
+    .h4_tit {
+      font-size: 20px !important;
+      margin-top: 40px !important;
+    }
+    .m .pt12 {
       padding-top: 12px;
     }
     .certifiWrap {
@@ -429,7 +521,7 @@ $red: #da2128;
           // right: -6px;
           left: 88px;
           font-weight: bold;
-          font-family: "굴림","Gulim",sans-serif;
+          font-family: "굴림", "Gulim", sans-serif;
           color: $메인컬러;
           font-size: 13px;
         }
@@ -466,10 +558,63 @@ $red: #da2128;
       // border-bottom: 1px solid #ccc;
     }
   }
+
+  /*재해현황 0617 추가*/
+  .csr_06_04_wrap {
+    .img_title {
+      margin: 40px 0;
+    }
+    .csr_06_04_graph {
+      text-align: right;
+      margin-bottom: 70px;
+    }
+    table {
+      border-collapse: collapse;
+      font-size: 13px;
+      text-align: center;
+      margin: 32px 0 40px;
+      th {
+        color: $메인컬러;
+        font-weight: 400;
+        font-family: "rix_b";
+        transform: rotate(0.1deg);
+        background-color: #e4e4e4;
+        border: 1px solid #d1d1d1;
+        border-top: 2px solid $메인컬러;
+        // padding: 0px 20px;
+        width: calc(100%/6);
+        height: 36px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        &:first-child {
+          border-left: none;
+        }
+        &:last-child {
+          border-right: none;
+        }
+      }
+      td {
+        border: 1px solid #d1d1d1;
+        padding: 0px 20px;
+        font-family: "돋움", "Dotum", "san-serif";
+        height: 36px;
+        box-sizing: border-box;
+        &:first-child {
+          border-left: none;
+        }
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+  }
 }
 
 /***********************CSR05*****************************/
 .csr_05_wrap {
+  .mainTitle {
+    margin-bottom: 16px;
+  }
   /*textWrap*/
   .textWrap {
     .leftWrap {
@@ -531,13 +676,15 @@ $red: #da2128;
       .cTitle {
         float: left;
         width: 100px;
-        font-family: "rix_m";
+        font-family: "돋움", "Dotum";
         font-weight: bold;
         display: block;
       }
       .cDate {
         float: right;
         width: 300px;
+        position: relative;
+        left: -12px;
       }
     }
 
@@ -561,9 +708,8 @@ $red: #da2128;
 
 /***********************CSR04*****************************/
 .csr_04_wrap {
-
   .textWrap {
-    font-family: "굴림","Gulim","돋움", "Dotum", sans-serif;
+    font-family: "굴림", "Gulim", "돋움", "Dotum", sans-serif;
     letter-spacing: -0.08em;
     line-height: 1.6;
     span {
@@ -577,9 +723,10 @@ $red: #da2128;
   .infoWrap {
     margin-top: 80px;
     .h3_tit {
-      font-family: "rix_m", sans-serif;
-      font-weight: bold;
+      font-family: "rix_b", sans-serif;
+      font-weight: 400;
       font-size: 20px;
+      transform: rotate(0.1deg);
       color: $메인컬러;
       border-bottom: 1px solid #ccc;
       padding: 24px 0 12px 0;
@@ -600,30 +747,41 @@ $red: #da2128;
         .textBox {
           letter-spacing: -0.05em;
           line-height: 1.6;
-          font-family: "돋움", "Dotum", sans-serif;
+          font-family: "굴림", "Gulim", sans-serif;
         }
       }
     }
+  }
+  .Gulim {
+    font-size: 12px;
+    margin-top: 30px;
   }
 }
 
 /***********************CSR03*****************************/
 
 .csr_03_wrap {
-
+  .gotham {
+    font-family: "Gotham_Book";
+    color: $메인컬러 !important;
+  }
 
   font-family: "돋움", "Dotum", sans-serif;
   .imgWrap {
     float: left;
     margin-top: 80px;
+    width: 50%;
+    height: 340px;
   }
   .rightWrap {
-    float: right;
-    margin: 70px 50px 0 0px;
+    float: left;
+    margin-top: 80px;
+    width: 50%;
+    height: 340px;
     .textWrap {
       letter-spacing: -0.05em;
       .textBox {
-        line-height: 1.6;
+        line-height: 1.8;
       }
     }
     table {
@@ -633,8 +791,9 @@ $red: #da2128;
       margin: 32px 0 40px;
       th {
         color: $메인컬러;
-        font-weight: bold;
-        font-family: "rix_m";
+        font-weight: 400;
+        font-family: "rix_b";
+        transform: rotate(0.1deg);
         background-color: #e4e4e4;
         border: 1px solid #d1d1d1;
         border-top: 2px solid $메인컬러;
@@ -658,4 +817,32 @@ $red: #da2128;
       }
     }
   }
+  .bottomWrap {
+    display: block;
+    position: relative;
+    top: 40px;
+    left: 20px;
+    letter-spacing: -0.05em;
+    line-height: 1.8;
+    padding-bottom: 20px;
+    .textBoxWrap {
+      width: 50%;
+      float: left;
+    }
+    .left20 {
+      position: relative;
+      left: -20px;
+    }
+    .pLink {
+      margin-top: 16px;
+      a {
+        color: $red;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+#container .content {
+  min-height: 1050px;
 }
