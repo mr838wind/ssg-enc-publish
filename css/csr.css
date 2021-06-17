@@ -59,6 +59,13 @@
   vertical-align: middle;
 }
 
+.clearFix::before,
+.clearFix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .Gulim {
   font-family: "굴림", "Gulim";
 }
@@ -217,7 +224,7 @@
 .csr_07_wrap .certificateWrap .leftWrap .cTitle {
   float: left;
   width: 100px;
-  font-family: "돋움","Dotum";
+  font-family: "돋움", "Dotum";
   font-weight: bold;
   display: block;
 }
@@ -552,7 +559,7 @@
 .csr_05_wrap .certificateWrap .leftWrap .cTitle {
   float: left;
   width: 100px;
-  font-family: '돋움','Dotum';
+  font-family: "돋움", "Dotum";
   font-weight: bold;
   display: block;
 }
@@ -651,11 +658,15 @@
 .csr_03_wrap .imgWrap {
   float: left;
   margin-top: 80px;
+  width: 50%;
+  height: 340px;
 }
 
 .csr_03_wrap .rightWrap {
-  float: right;
-  margin: 70px 50px 0 0px;
+  float: left;
+  margin-top: 80px;
+  width: 50%;
+  height: 340px;
 }
 
 .csr_03_wrap .rightWrap .textWrap {
@@ -663,7 +674,7 @@
 }
 
 .csr_03_wrap .rightWrap .textWrap .textBox {
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 .csr_03_wrap .rightWrap table {
@@ -703,4 +714,37 @@
 
 .csr_03_wrap .rightWrap table td:last-child {
   border-right: none;
+}
+
+.csr_03_wrap .bottomWrap {
+  display: block;
+  position: relative;
+  top: 40px;
+  left: 20px;
+  letter-spacing: -0.05em;
+  line-height: 1.8;
+  padding-bottom: 20px;
+}
+
+.csr_03_wrap .bottomWrap .textBoxWrap {
+  width: 50%;
+  float: left;
+}
+
+.csr_03_wrap .bottomWrap .left20 {
+  position: relative;
+  left: -20px;
+}
+
+.csr_03_wrap .bottomWrap .pLink {
+  margin-top: 16px;
+}
+
+.csr_03_wrap .bottomWrap .pLink a {
+  color: #da2128;
+  text-decoration: underline;
+}
+
+#container .content {
+  min-height: 950px;
 }
