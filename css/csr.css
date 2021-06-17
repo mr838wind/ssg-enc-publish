@@ -800,6 +800,7 @@
 
 .csr_03_wrap .rightWrap .textWrap .textBox {
   line-height: 1.8;
+  font-family: '굴림','Gulim','san-serif';
 }
 
 .csr_03_wrap .rightWrap table {
@@ -856,6 +857,10 @@
   float: left;
 }
 
+.csr_03_wrap .bottomWrap .textBox {
+  font-family: '굴림','Gulim','san-serif';
+}
+
 .csr_03_wrap .bottomWrap .left20 {
   position: relative;
   left: -20px;
@@ -863,6 +868,7 @@
 
 .csr_03_wrap .bottomWrap .pLink {
   margin-top: 16px;
+  font-family: '굴림','Gulim','san-serif';
 }
 
 .csr_03_wrap .bottomWrap .pLink a {
