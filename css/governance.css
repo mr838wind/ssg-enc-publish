@@ -146,7 +146,7 @@ input {
   width: 100%;
 }
 
-.Gulim {
+.GulimGulim {
   font-family: "굴림", "Gulim";
   font-size: 12px;
 }
@@ -154,7 +154,8 @@ input {
 .h4_tit {
   font-size: 16px;
   color: #544039;
-  margin: 40px 0 20px;
+  /* 0628 */
+  margin: 10px 0 20px;
   font-family: "rix_b", sans-serif;
   font-weight: 400;
   transform: rotate(0.1deg);
@@ -271,8 +272,9 @@ input {
   border-collapse: collapse;
   background-color: #e4e4e4;
   font-size: 13px;
-  font-family: "rix_b";
-  font-weight: 400;
+  /*0628*/
+  font-family: "rix_l";
+  font-weight: bold;
   color: #544039;
   padding: 0px 60px;
   height: 36px;
@@ -355,7 +357,7 @@ input {
   font-family: "rix_b", sans-serif;
   font-weight: 400;
   transform: rotate(0.1deg);
-  margin: 10px 0;
+  margin: 10px 0 15px 0px;
 }
 
 .directorWrap .inPerson {
@@ -379,8 +381,13 @@ input {
   font-family: "돋움", "Dotum";
 }
 
+
+
+
 .directorWrap .inPerson .personWrap .personDesc .ptb8 {
-  padding: 8px 0;
+  /* 0628 */
+  /* padding: 8px 0; */
+
 }
 
 .directorWrap .inPerson .personWrap .personDesc .pb40 {
@@ -394,6 +401,8 @@ input {
 .directorWrap .inPerson .personWrap .lastLi .personDesc {
   margin-top: 32px;
 }
+
+
 
 .directorWrap .outPerson {
   width: 400px;
@@ -417,7 +426,8 @@ input {
 }
 
 .directorWrap .outPerson .personWrap .personDesc .ptb8 {
-  padding: 8px 0;
+  /* 0628 */
+  /* padding: 8px 0; */
 }
 
 .directorWrap .outPerson .personWrap .personDesc .pb40 {
@@ -445,9 +455,22 @@ input {
 }
 
 .permisWrap table li {
-  list-style-type: disc;
-  margin: 8px 0;
-  font-size: 13px;
+  list-style-type: none;
+  margin: 1px 0;
+  font-size: 11px;
+  position:relative;
+}
+/* 0628 */
+
+.permisWrap table li::before {
+  content: "";
+  position: absolute;
+  top:6px;
+  left:-10px;
+  width: 2px;
+  height: 2px;
+  border-radius: 100%;
+  background-color: #8d8d8d;
 }
 
 .permisWrap table th {
@@ -455,14 +478,17 @@ input {
   border: 1px solid #d1d1d1;
   border-top: 2px solid #544039;
   color: #544039;
-  padding: 12px;
+  padding: 7px;
   width: calc(100% / 3);
   font-size: 13px;
-  font-family: "rix_b";
-  font-weight: 400;
+  /* 0628 */
+  font-family: "rix_l";
+  font-weight: bold;
   white-space: nowrap;
-  transform: rotate(0.1deg);
+  /* transform: rotate(0.1deg); */
 }
+
+
 
 .permisWrap table td {
   border: 1px solid #d1d1d1;
@@ -490,7 +516,7 @@ input {
     font-family: "rix_b", sans-serif;
     font-weight: 400;
     transform: rotate(0.1deg);
-    margin: 10px 0;
+    margin: 10px 0 15px 0;
 }
 
 .recommendWrap .h4_tit{
@@ -508,7 +534,7 @@ input {
 
 .borderB {
   border-bottom: 1px solid #ccc;
-  padding: 40px 0 10px;
+  padding: 60px 0 10px;
 }
 
 .inPerson {
@@ -532,8 +558,14 @@ input {
   font-family: "돋움", "Dotum";
 }
 
+/*0628*/
+.inPerson .personWrap .personDesc > ul > li {
+  line-height: 20px;
+}
+
 .inPerson .personWrap .personDesc .ptb8 {
-  padding: 8px 0;
+  /* padding: 8px 0; */
+  line-height: 33px;
 }
 
 .inPerson .personWrap .personDesc .pb16 {
@@ -541,7 +573,8 @@ input {
 }
 
 .inPerson .personWrap .personDesc .pb40 {
-  padding-bottom: 40px;
+  /* padding-bottom: 40px; */
+  padding-bottom: 15px;
 }
 
 .regulation {
@@ -560,6 +593,8 @@ input {
   color: #544039;
   position: relative;
   top: -1px;
+
+
 }
 
 .outPerson {
@@ -582,9 +617,14 @@ input {
   font-size: 13px;
   font-family: "돋움", "Dotum";
 }
+/*0628*/
+.outPerson .personWrap .personDesc > ul > li {
+  line-height: 20px;
+}
 
 .outPerson .personWrap .personDesc .ptb8 {
-  padding: 8px 0;
+  /* padding: 8px 0; */
+  line-height: 33px;;
 }
 
 .outPerson .personWrap .personDesc .pb16 {
@@ -653,8 +693,9 @@ input {
 
 .tab-cont-3 table td {
   border: 1px solid #d1d1d1;
-  padding: 14px 10px 14px;
+  /* padding: 14px 10px 14px; */
   font-size: 13px;
+  height:36px;
 }
 
 .tab-cont-3 table td:first-child {
@@ -738,10 +779,10 @@ input {
   border-top: 2px solid #333;
   background-color: #e4e4e4;
   color: #544039;
-  font-family: "rix_b";
+  font-family: "rix_l";
   font-size: 13px;
-  font-weight: 400;
-  transform: rotate(0.1deg);
+  font-weight: bold;
+  /* transform: rotate(0.1deg); */
   padding: 0 10px;
   white-space: nowrap;
   vertical-align: middle;

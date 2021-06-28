@@ -202,9 +202,9 @@
 
 .csr_07_wrap .textWrap .tableWrap table th {
   color: #544039;
-  font-weight: 400;
-  font-family: "rix_b";
-  transform: rotate(0.1deg);
+  font-weight: bold;
+  font-family: "rix_l";
+  /* transform: rotate(0.1deg); */
   background-color: #e4e4e4;
   border: 1px solid #d1d1d1;
   border-top: 2px solid #544039;
@@ -569,9 +569,9 @@
 
 .csr_06_wrap .csr_06_04_wrap table th {
   color: #544039;
-  font-weight: 400;
-  font-family: "rix_b";
-  transform: rotate(0.1deg);
+  font-weight: bold;
+  font-family: "rix_l";
+  /* transform: rotate(0.1deg); */
   background-color: #e4e4e4;
   border: 1px solid #d1d1d1;
   border-top: 2px solid #544039;
@@ -812,9 +812,9 @@
 
 .csr_03_wrap .rightWrap table th {
   color: #544039;
-  font-weight: 400;
-  font-family: "rix_b";
-  transform: rotate(0.1deg);
+  font-weight: bold;
+  font-family: "rix_l";
+  /* transform: rotate(0.1deg); */
   background-color: #e4e4e4;
   border: 1px solid #d1d1d1;
   border-top: 2px solid #544039;

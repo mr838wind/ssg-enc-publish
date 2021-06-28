@@ -217,9 +217,9 @@ table th {
   background-color: #e4e4e4;
   color: #544039;
   font-size: 13px;
-  font-family: "rix_b";
-  font-weight: 400;
-  transform: rotate(0.1deg);
+  font-family: "rix_l";
+  font-weight: bold;
+  /* transform: rotate(0.1deg); */
   padding: 7.5px 10px 7.5px;
   white-space: nowrap;
 }
