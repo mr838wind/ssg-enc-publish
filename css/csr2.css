@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "rix_b";
+  src: url("../font/rix_m_go_b.ttf") format("truetype"), url("../font/rix_m_go_b.eot") format("embedded-opentype"), url("../font/rix_m_go_b.woff") format("woff"), url("../font/rix_m_go_b.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "rix_l";
+  src: url("../font/rix_m_go_l.TTF") format("truetype"), url("../font/rix_m_go_l.eot") format("embedded-opentype"), url("../font/rix_m_go_l.woff") format("woff"), url("../font/rix_m_go_l.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "rix_m";
+  src: url("../font/rix_m_go_m.TTF") format("truetype"), url("../font/rix_m_go_m.eot") format("embedded-opentype"), url("../font/rix_m_go_m.woff") format("woff"), url("../font/rix_m_go_m.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gotham_m";
+  src: url("../font/Gotham_Medium.ttf") format("truetype"), url("../font/Gotham_Medium.eot") format("embedded-opentype"), url("../font/Gotham_Medium.woff") format("woff"), url("../font/Gotham_Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gotham_Book";
+  src: url("../font/Gotham_Book_Regular.ttf") format("truetype"), url("../font/Gotham_Book_Regular.eot") format("embedded-opentype"), url("../font/Gotham_Book_Regular.woff") format("woff"), url("../font/Gotham_Book_Regular.woff2") format("woff2");
+}
+/*메인타이틀 css 추가*/
+.mainTitle {
+    font-family: "rix_l";
+    font-size: 27px;
+    font-weight: 400;
+    color: #544039;
+    line-height: 1.2;
+    letter-spacing: -0.04em;
+    transform: rotate(0.1deg);
+}
+.mainTitle span{
+    color:#da2128;
+}
+
+/*dl>dt css 추가*/
+.csr_list dt{
+    font-family: "rix_l";
+    font-size: 16px;
+    font-weight: 600;
+    color:#63514b;
+}
