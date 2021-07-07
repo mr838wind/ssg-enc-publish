@@ -302,7 +302,7 @@ input {
 }
 
 .governance .resultWrap .h4_tit {
-  padding-bottom: 12px;
+  padding-bottom: 10px;
 }
 
 .governance .resultWrap p {
@@ -443,6 +443,8 @@ input {
   border-bottom: 1px solid #333;
   font-size: 14px;
   padding-bottom: 10px;
+  /*0707여백조정을 위해 추가-다른페이지나 섹션에 영향을 주면 지우기*/
+  padding-top: 8px;
 }
 
 .permisWrap .table_1 {
@@ -458,6 +460,7 @@ input {
   list-style-type: none;
   margin: 1px 0;
   font-size: 11px;
+  line-height: 20px;
   position:relative;
 }
 /* 0628 */
@@ -524,7 +527,7 @@ input {
   font-family: "rix_b", sans-serif;
   font-weight: 400;
   transform: rotate(0.1deg);
-  margin: 10px 0;
+  margin: 10px 0; 
 }
 
 .shape_table {
@@ -813,18 +816,23 @@ input {
 .tab-cont-5 table td:last-child {
   border-right: none;
 }
-
-.directorWrap.directorWrap_0702 .outPerson .personWrap .personDesc.personDesc_1,
-.directorWrap.directorWrap_0702 .inPerson .personWrap .personDesc.personDesc_1 { height: auto; }
-.directorWrap.directorWrap_0702 .outPerson .personWrap .personDesc .pb40.pb40_1,
-.directorWrap.directorWrap_0702 .inPerson .personWrap .personDesc .pb40.pb40_1 { padding-bottom: 0; }
-.permisWrap.permisWrap_0702 .h4_tit.h4_tit_1 { margin-top: 70px; }
-.permisWrap.permisWrap_0702 table td { padding: 20px 32px; }
-.permisWrap.permisWrap_0702 table td * { font-size: 13pt; line-height: 20pt; }
-.inspectionWrap.inspectionWrap_0702 .inPerson .personWrap .personDesc.personDesc_1 { height: auto; }
-.inspectionWrap.inspectionWrap_0702 .h4_tit.h4_tit_1 { margin-top: 40px; }
-.inspectionWrap.inspectionWrap_0702 .inPerson .personWrap .personDesc .pb40.pb40_1 { padding-bottom: 0; }
-.recommendWrap.recommendWrap_0702 .h4_tit_1 { margin-top: 0; padding-top: 70px; }
-.progressWrap.progressWrap_0702 .th_1 { line-height: 16pt; }
-.operationWrap.operationWrap_0702 .td_1 { line-height: 16pt; }
-.tableWrap.tableWrap_0702 .wb_1 { line-height: 16pt; }
+/*0707 class 추가 수정작업*/
+.per_height{
+  height:200px!important;
+}
+.table_color{
+  color:#544039!important;
+}
+.plus-icon1{
+  margin-left: -.6em;
+}
+.plus-icon2{
+  margin-left: -.3em;
+}
+.per_tit{
+  font-size: 14px!important;
+  margin-top: 4px;
+}
+.td_pad{
+  padding: 0 12px;
+}

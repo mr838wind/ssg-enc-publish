@@ -57,4 +57,5 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 .icon-down-dir:before { content: '\e800'; } /* '' */
-.icon-angle-right:before { content: '\f105'; } /* '' */
+.icon-angle-right:before { content: '\f105'; vertical-align: revert;} /* '' */
+/*0707 다운로드와 화살표 정렬위해 버티컬얼라인 추가 -안선영프로 */

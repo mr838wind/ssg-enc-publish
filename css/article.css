@@ -275,3 +275,7 @@ input {
   /* padding-left: 0px; */
   /* float: none; */
 }
+/*0707 다운로드 화살표 정렬위해 클래스 추가-안선영프로*/
+.plus-icon2{
+  margin-left: -.3em;
+}
