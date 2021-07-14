@@ -44,12 +44,25 @@
 }
 
 #container .h4_tit {
-  margin: 24px 0;
+  margin: 40px 0 24px 0;
   font-size: 16px;
+  line-height: 16px;
   font-weight: 400;
   font-family: "rix_b";
   color: #544039;
   transform: rotate(0.1deg);
+  letter-spacing: -0.5px;/*0712*/
+}
+/*타이틀 여백 따로 관리위해 클래스명 분리 0714*/
+#container .h4_tit2 {
+  margin: 30px 0 24px 0;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: "rix_b";
+  color: #544039;
+  transform: rotate(0.1deg);
+  letter-spacing: -0.5px;/*0712*/
 }
 
 #container .h4_tit img {
@@ -383,6 +396,7 @@
   transform: rotate(0.1deg);
   color: #544039;
   padding: 80px 0 12px 0;
+  letter-spacing: -0.5px;/*0712*/
 }
 
 .csr_06_wrap .csr_06_01_wrap img {
@@ -398,7 +412,7 @@
 }
 
 .csr_06_wrap .csr_06_02_wrap .csr_06_02_01 {
-  padding-top: 24px;
+  /* padding-top: 24px; */
 }
 
 .csr_06_wrap .csr_06_02_wrap .csr_06_02_04 .rightWrap ul {
@@ -417,9 +431,12 @@
 .csr_06_wrap .csr_06_02_wrap .csr_06_02_04 .rightWrap ul li img {
   padding: 20px 0 0 0;
 }
-
+/*img별도 여백 주기위해 추가 0714*/
+.csr_06_imgtop{
+  padding: 30px 0 0 0!important;
+}
 .csr_06_wrap .csr_06_02_wrap img {
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
 .csr_06_wrap .csr_06_02_wrap .leftWrap {
@@ -442,12 +459,26 @@
   background: #ccc;
   margin: 12px 0;
 }
+.csr_06_wrap .csr_06_02_wrap .line2 {
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+}
 
 .csr_06_wrap .csr_06_02_wrap .textBox {
-  padding-left: 36px;
+  padding-left: 34px;
+  line-height: 20px;
 }
 
 .csr_06_wrap .csr_06_02_wrap .h4_tit span {
+  font-family: "Gotham_m", sans-serif;
+  font-size: 20px;
+  padding-right: 8px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+.csr_06_wrap .csr_06_02_wrap .h4_tit2 span {
   font-family: "Gotham_m", sans-serif;
   font-size: 20px;
   padding-right: 8px;
@@ -466,7 +497,7 @@
 }
 
 .csr_06_wrap .csr_06_03_wrap .certifiWrap {
-  margin-top: 16px;
+  margin-top: 10px;
 }
 
 .csr_06_wrap .csr_06_03_wrap .leftWrap {
@@ -549,7 +580,7 @@
 }
 
 .csr_06_wrap .csr_06_03_wrap .pb24 {
-  padding-bottom: 60px;
+  padding-bottom: 58px;
 }
 
 .csr_06_wrap .csr_06_04_wrap .img_title {
