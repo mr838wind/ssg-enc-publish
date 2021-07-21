@@ -179,9 +179,14 @@
 }
 
 .csr_07_wrap .textWrap .rightWrap {
-  float: left;
+  float: right;
   width: 50%;
-  height: 234px;
+  text-align: right;
+}
+
+.csr_07_wrap .textWrap .rightWrap > img {
+  margin-top: 40px;
+  padding-right: 10px;
 }
 
 .csr_07_wrap .textWrap .textBox {
@@ -189,13 +194,12 @@
   white-space: nowrap;
 }
 
-.csr_07_wrap .textWrap .tableWrap {
+.csr_07_wrap .csr_07_02_wrap .tableWrap {
   position: relative;
-  top: 60px;
   margin-bottom: 60px;
 }
 
-.csr_07_wrap .textWrap .tableWrap .h5_tit {
+.csr_07_wrap .csr_07_02_wrap .tableWrap .h5_tit {
   font-size: 14px;
   font-family: 'rix_b';
   transform: rotate(-0.1deg);
@@ -206,14 +210,14 @@
   border-bottom: 1px solid #544039;
 }
 
-.csr_07_wrap .textWrap .tableWrap table {
+.csr_07_wrap .csr_07_02_wrap .tableWrap table {
   border-collapse: collapse;
   font-size: 13px;
   text-align: center;
   margin: 20px 0 8px;
 }
 
-.csr_07_wrap .textWrap .tableWrap table th {
+.csr_07_wrap .csr_07_02_wrap .tableWrap table th {
   color: #544039;
   font-weight: bold;
   font-family: "rix_l";
@@ -227,15 +231,15 @@
   letter-spacing: -0.05em;
 }
 
-.csr_07_wrap .textWrap .tableWrap table th:first-child {
+.csr_07_wrap .csr_07_02_wrap .tableWrap table th:first-child {
   border-left: none;
 }
 
-.csr_07_wrap .textWrap .tableWrap table th:last-child {
+.csr_07_wrap .csr_07_02_wrap .tableWrap table th:last-child {
   border-right: none;
 }
 
-.csr_07_wrap .textWrap .tableWrap table td {
+.csr_07_wrap .csr_07_02_wrap .tableWrap table td {
   border: 1px solid #d1d1d1;
   font-family: "돋움", "Dotum", "san-serif";
   width: calc(100%/8);
@@ -243,16 +247,16 @@
   box-sizing: border-box;
 }
 
-.csr_07_wrap .textWrap .tableWrap table td:first-child {
+.csr_07_wrap .csr_07_02_wrap .tableWrap table td:first-child {
   border-left: none;
   width: 8%;
 }
 
-.csr_07_wrap .textWrap .tableWrap table td:last-child {
+.csr_07_wrap .csr_07_02_wrap .tableWrap table td:last-child {
   border-right: none;
 }
 
-.csr_07_wrap .textWrap .tableWrap table .wb {
+.csr_07_wrap .csr_07_02_wrap .tableWrap table .wb {
   font-weight: bold;
   background-color: #fbfbfa;
   letter-spacing: -0.05em;
@@ -263,8 +267,8 @@
 }
 
 .csr_07_wrap .graphWrap {
-  position: relative;
-  top: 60px;
+  float: left;
+  margin-top: 60px;
   text-align: center;
 }
 
@@ -273,7 +277,7 @@
 }
 
 .csr_07_wrap .certificateWrap {
-  margin-top: 160px;
+  margin-top: 40px;
   position: relative;
 }
 
@@ -520,7 +524,6 @@
   display: flex;
   box-sizing: border-box;
   border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
 }
 
 .csr_06_wrap .csr_06_03_wrap .rightWrap > img {
@@ -660,6 +663,7 @@
 .csr_05_wrap .textWrap .rightWrap {
   float: right;
   width: 50%;
+  text-align: right;
 }
 
 .csr_05_wrap .textWrap .textBox {
@@ -669,6 +673,11 @@
 
 .csr_05_wrap .textWrap .pt12 {
   padding-top: 12px;
+}
+
+.csr_05_wrap .textWrap .rightWrap img {
+  margin-top: 40px;
+  padding-right: 10px;
 }
 
 .csr_05_wrap .graphWrap {
@@ -908,6 +917,32 @@
   text-decoration: underline;
 }
 
+.csr_03_wrap .line {
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+  margin: 40px 0;
+}
+
 #container .content {
   min-height: 1050px;
 }
+
+.cs > p {margin:30px 0 10px;}
+.cs .cnt {width:850px;}
+.cs .cnt p {line-height: 30px; margin-bottom:30px;}
+
+/* 210719 html 확인용 임시 _ ( global.css 에 반영된 소스 _ 실제 반영시 제외 )*/
+.snb_2dep_area li .snb04_2 {background:url(../images/common/snb/snb04_02.gif) no-repeat !important;}
+.snb_2dep_area li .snb04_2:focus {background:url(../images/common/snb/snb04_02on.gif) no-repeat !important;}
+
+.snb_3dep_area li .snb04_2_1 {background:url(../images/common/snb/snb04_02_01.gif) no-repeat;}
+.snb_3dep_area li .snb04_2_2 {background:url(../images/common/snb/snb04_02_02.gif) no-repeat;}
+
+.snb_3dep_area li .snb04_2_1:hover {background:url(../images/common/snb/snb04_02_01on.gif) no-repeat;}
+.snb_3dep_area li .snb04_2_2:hover {background:url(../images/common/snb/snb04_02_02on.gif) no-repeat;}
+
+.snb_3dep_area li .snb04_2_1.on {background:url(../images/common/snb/snb04_02_01on.gif) no-repeat;}
+.snb_3dep_area li .snb04_2_2.on {background:url(../images/common/snb/snb04_02_02on.gif) no-repeat;}
+
+/* 210719 추가 */
