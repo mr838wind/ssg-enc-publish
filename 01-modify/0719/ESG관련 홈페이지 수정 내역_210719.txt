@@ -1,0 +1,38 @@
+
+투명경영 > 개요
+/html/csr_03_01.html
+
+투명경영 > CP등급평가
+/html/csr_03_02.html
+
+CSR > 품질경영
+/html/csr_05_0719.html
+
+CSR > 안전보건경영 > 안전인증
+/html/csr_06_0719.html
+
+CSR > 친환경경영
+/html/csr_07_0719.html
+
+CSR > 동반성장 > 고객상담운영
+/html/csr_08_03.html
+
+상위 html 파일 변경 CSS 반영
+/css/csr.css
+:935번째 줄 :  실제 반영시 제외 처리 필요
+
+
+* 기존 투명경영 메뉴 투명경영 > 개요 / CP등급평가로 depth 추가된 css 및 이미지 추가
+
+[css]
+/css/global.css
+
+[image]
+/images/common/snb/snb04_02.gif
+/images/common/snb/snb04_02on.gif
+
+/images/common/snb/snb04_02_01.gif
+/images/common/snb/snb04_02_01on.gif
+
+/images/common/snb/snb04_02_02.gif
+/images/common/snb/snb04_02_02on.gif
