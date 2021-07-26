@@ -6,7 +6,7 @@ article.asp  		<->  article_0530.html   -- 투자정보 > 경영정보 > 정관
 stockholder.list.asp  	<->  stock_0530.html  -- 투자정보 > 주식정보 > 주주구성
 --------------------- csr
 transparent_management.asp  	<->   csr_03.html  -- CSR > 투명경영 > 개요
-todo.asp		  	<->   csr_03_02.html  -- CSR > 투명경영 > CP등급평가
+cp_level.asp		  	<->   csr_03_02.html  -- CSR > 투명경영 > CP등급평가
 csr_04.asp  			<->   csr_04.html  -- CSR > 사회공헌
 csr_05.asp  			<->   csr_05.html  -- CSR > 품질경영
 csr_06.asp  			<->   csr_06.html  -- CSR > 안전보건경영
