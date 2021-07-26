@@ -13,3 +13,4 @@ csr_06.asp  			<->   csr_06.html  -- CSR > 안전보건경영
 csr_07.asp  			<->   csr_07.html  -- CSR > 친환경경영
 shared_growth.asp  		<->   csr_08_01.html  -- CSR > 동반성장 > 개요
 four_practice.asp  		<->   tab_text.html  -- CSR > 동반성장 > 4대실천사항
+customer_service.asp	<->	  csr_08_03.htm -- CSR > 동반성장 > 고객상담실 운영 	  
